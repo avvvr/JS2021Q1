@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.test {
+  border: 1px solid red;
+}
+
+.test1 {
+  border: 1px solid green;
+}
+
+.body-content{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header{
+  max-width: 1440px;
+  margin: auto;
+}
+.header-content{
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo-container{
+  display: flex;
+}
+
+.nav-ul li{
+  display: inline;
+}
