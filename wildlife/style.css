@@ -111,7 +111,7 @@
   transition: 0.2s;
 }
 
-.sign-btn:active{
+.sign-btn:active {
   border-color: #935314;
   background-color: #935314;
   transition: 0.2s;
@@ -175,6 +175,19 @@
 
   background: #CD6326;
   border-radius: 5px;
+}
+
+.survival-btn:hover {
+  border-color: #E6902A;
+  background-color: #E6902A;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.survival-btn:active {
+  border-color: #935314;
+  background-color: #935314;
+  transition: 0.2s;
 }
 
 .survival-btn-link {
