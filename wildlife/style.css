@@ -72,11 +72,6 @@
 }
 
 
-.sign-link {
-  width: 120px;
-  text-align: center;
-}
-
 .nav-link {
   font-size: 23px;
   line-height: 60px;
@@ -96,6 +91,11 @@
   transition: 0.2s;
 }
 
+.sign-link {
+  width: 120px;
+  text-align: center;
+}
+
 .sign-btn {
   width: 120px;
   height: 50px;
@@ -108,6 +108,12 @@
 
 .sign-btn:hover {
   background-color: #CD6326;
+  transition: 0.2s;
+}
+
+.sign-btn:active{
+  border-color: #935314;
+  background-color: #935314;
   transition: 0.2s;
 }
 
