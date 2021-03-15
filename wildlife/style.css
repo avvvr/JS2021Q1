@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -11,25 +14,107 @@
   border: 1px solid green;
 }
 
-.body-content{
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.header{
-  max-width: 1440px;
-  margin: auto;
-}
-.header-content{
+.body-content {
   display: flex;
-  max-width: 1200px;
-  margin: auto;
+  flex-direction: column;
+  align-items: center;
 }
 
-.logo-container{
+.header {
   display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+  position: absolute;
+  width: 1440px;
+  height: 102px;
+  /*margin: auto;*/
 }
 
-.nav-ul li{
-  display: inline;
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+}
+
+.logo-container {
+  display: flex;
+  width: 740px;
+}
+
+.logo-text {
+  margin-left: 15px;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 60px;
+  text-transform: uppercase;
+
+  color: #F7F7F7;
+}
+
+.nav {
+  width: 495px;
+}
+
+.nav-ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-li {
+  display: inline-flex;
+  align-items: center;
+}
+
+
+.sign-link {
+  width: 120px;
+  text-align: center;
+}
+
+.nav-link {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 60px;
+  color: #F7F7F7;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.nav-search {
+  transition: 0.2s;
+}
+
+.nav-link:hover,
+.nav-search:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sign-btn {
+  width: 120px;
+  height: 50px;
+
+  border: 2px solid #CD6326;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.sign-btn:hover {
+  background-color: #CD6326;
+  transition: 0.2s;
+}
+
+.main {
+  width: 1440px;
+  height: 779px;
+  background: url("./assets/01-bg.png") no-repeat;
 }
