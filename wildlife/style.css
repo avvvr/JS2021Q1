@@ -213,7 +213,7 @@
 .latest-header {
   display: flex;
   align-items: flex-end;
-  height: 192px;
+  height: 194px;
 
   font-size: 48px;
   line-height: 72px;
@@ -223,7 +223,7 @@
 .latest-text {
   display: flex;
   align-items: flex-end;
-  height: 56px;
+  height: 54px;
 
   font-size: 24px;
   line-height: 36px;
@@ -250,6 +250,10 @@
   width: 1020px;
 }
 
+.slider-el{
+  height: 360px;
+}
+
 .slider-arrow:hover {
   opacity: 0.8;
   cursor: pointer;
@@ -266,6 +270,7 @@
 }
 
 .slider-el-name {
+  padding-bottom: 6px;
   height: 36px;
   font-size: 22px;
   line-height: 36px;
