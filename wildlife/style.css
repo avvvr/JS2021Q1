@@ -255,9 +255,14 @@
   height: 360px;
 }
 
+.slider-arrow {
+  transition: 0.2s;
+}
+
 .slider-arrow:hover {
   opacity: 0.8;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .slider-el-text {
@@ -345,6 +350,14 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   cursor: pointer;
+  border-color: #E6902A;
+  background-color: #E6902A;
+}
+
+input[type="submit"]:active {
+  cursor: pointer;
+  border-color: #935314;
+  background-color: #935314;
 }
 
 .footer {
@@ -386,11 +399,13 @@ input[type="submit"]:hover {
 .footer-socials-el {
   display: inline;
   list-style: none;
+  transition: 0.2s;
 }
 
 .footer-nav-el:hover,
 .footer-socials-el:hover {
   opacity: 0.8;
+  transition: 0.2s;
 }
 
 .footer-nav-el a {
