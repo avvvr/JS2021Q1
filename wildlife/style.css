@@ -250,6 +250,11 @@
   width: 1020px;
 }
 
+.slider-arrow:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .slider-el-text {
   display: flex;
   flex-direction: column;
