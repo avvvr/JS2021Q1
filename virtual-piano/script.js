@@ -209,3 +209,39 @@ radio.addEventListener('change', () => {
     letters.classList.remove('letters-hidden');
   }
 })
+
+let isFullscreen = false;
+const fullscreenBtn = document.querySelector('#fullscreen-btn');
+fullscreenBtn.addEventListener('click', () => {
+  fullscreenBtn.classList.toggle('fullscreen-btn');
+  fullscreenBtn.classList.toggle('fullscreen-exit-btn');
+    const html = document.documentElement;
+  if (isFullscreen) {
+    isFullscreen = false;
+    fullScreenCancel();
+  } else {
+    isFullscreen = true;
+    fullScreen(html);
+  }
+})
+
+function fullScreen(element) {
+  if (element.requestFullScreen) {
+    element.requestFullScreen();
+  } else if (element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen();
+  } else if (element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  }
+}
+
+function fullScreenCancel() {
+  //alert('oops');
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
+  }
+}

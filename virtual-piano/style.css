@@ -78,3 +78,26 @@ body {
 	background: #000;
   color: white;
 }
+
+.fullscreen-btn,
+.fullscreen-exit-btn{
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  outline: none;
+}
+
+.fullscreen-btn{
+  background-image: url('./assets/img/fullscreen.svg');
+}
+
+.fullscreen-exit-btn{
+  background-image: url('./assets/img/exit-fullscreen.svg');
+}
+
+.fullscreen-btn:hover,
+.fullscreen-exit-btn:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
