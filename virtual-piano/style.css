@@ -4,34 +4,53 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #F77156;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*width: 1200px;*/
+}
+
+.form_toggle{
+  margin: 50px 0;
+}
+
+.fullscreen-btn{
+  margin-top: 30px;
+}
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*width: 1200px;*/
+}
+
 .piano-key:hover {
-  /*fill: #FFCD0A;
-  stroke-width: 80;*/
   cursor: pointer;
   transition: all 0.2s;
+  stroke-width: 50;
 }
 
 .piano-key:active {
-  /*fill: #FFCD0A;*/
   stroke-width: 20;
   transition: all 0.2s;
 }
 
-/*.piano-key.piano-key-active,
-.piano-key.sharp.piano-key-active {
-  fill: #FF9832;
-  stroke: #FF9832;
+.key_text-hover {
+  cursor: pointer;
+  font-size: 550px;
   transition: all 0.2s;
-}*/
-
-/*.piano-key:active {
-  opacity: 0.95;
-  stroke: #FF9832;
-  stroke: #FFCD0A;
-}*/
+}
 
 .notes-hidden,
 .letters-hidden,
@@ -40,47 +59,52 @@ body {
 }
 
 .form_toggle {
-	display: inline-block;
-	overflow: hidden;
+  display: inline-block;
+  overflow: hidden;
 }
+
 .form_toggle-item {
-	float: left;
-	display: inline-block;
+  float: left;
+  display: inline-block;
 }
+
 .form_toggle-item input[type=radio] {
-	display: none;
+  display: none;
 }
+
 .form_toggle-item label {
-	display: inline-block;
-	padding: 0px 15px;   
-	line-height: 34px;    
-	border: 1px solid #000;
-	border-right: none;
-	cursor: pointer;
-	user-select: none;   
+  display: inline-block;
+  padding: 0px 15px;
+  line-height: 34px;
+  border: 1px solid #000;
+  border-right: none;
+  cursor: pointer;
+  user-select: none;
 }
- 
+
 .form_toggle .item-1 label {
-	border-radius: 6px 0 0 6px;
+  border-radius: 6px 0 0 6px;
   color: white;
 }
+
 .form_toggle .item-2 label {
-	border-radius: 0 6px 6px 0;
-	border-right: 1px solid #000;
+  border-radius: 0 6px 6px 0;
+  border-right: 1px solid #000;
 }
- 
+
 /* Checked */
-.form_toggle .item-1 input[type=radio]:checked + label {
-	background: #000;
+.form_toggle .item-1 input[type=radio]:checked+label {
+  background: #000;
   color: white;
 }
-.form_toggle .item-2 input[type=radio]:checked + label {
-	background: #000;
+
+.form_toggle .item-2 input[type=radio]:checked+label {
+  background: #000;
   color: white;
 }
 
 .fullscreen-btn,
-.fullscreen-exit-btn{
+.fullscreen-exit-btn {
   background-color: transparent;
   border: none;
   width: 40px;
@@ -88,16 +112,16 @@ body {
   outline: none;
 }
 
-.fullscreen-btn{
+.fullscreen-btn {
   background-image: url('./assets/img/fullscreen.svg');
 }
 
-.fullscreen-exit-btn{
+.fullscreen-exit-btn {
   background-image: url('./assets/img/exit-fullscreen.svg');
 }
 
 .fullscreen-btn:hover,
-.fullscreen-exit-btn:hover{
+.fullscreen-exit-btn:hover {
   cursor: pointer;
   opacity: 0.8;
 }

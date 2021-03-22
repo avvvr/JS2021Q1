@@ -82,22 +82,36 @@ piano.addEventListener('mousedown', (event) => {
 });
 
 window.addEventListener('mouseup', (event) => {
-  isMouseDown = false;
-  event.target.classList.remove('piano-key-active');
-  if (isNotesDisplay) {
-    const element = document.querySelector(`#notes_text_${event.target.id}`);
-    element.style.fill = '#FFFFFF';
-  }
-  if (isLettersDisplay) {
-    const element = document.querySelector(`#letters_text_${event.target.id}`);
-    element.style.fill = '#FFF';
-  }
+  if (event.target.classList.contains('piano-key')) {
 
-  const line = document.querySelector(`#undeline_${event.target.id}`);
-  line.classList.add('underline-hidden');
+    isMouseDown = false;
+    event.target.classList.remove('piano-key-active');
+    if (isNotesDisplay) {
+      const element = document.querySelector(`#notes_text_${event.target.id}`);
+      element.style.fill = '#FFFFFF';
+    }
+    if (isLettersDisplay) {
+      const element = document.querySelector(`#letters_text_${event.target.id}`);
+      element.style.fill = '#FFF';
+    }
+
+    const line = document.querySelector(`#undeline_${event.target.id}`);
+    line.classList.add('underline-hidden');
+  }
 });
 
 piano.addEventListener('mouseover', (event) => {
+  if (event.target.classList.contains('piano-key')) {
+    if (isLettersDisplay) {
+      const letter_text = document.querySelector(`#letters_text_${event.target.id}`);
+      letter_text.style.fontSize = '550px';
+      letter_text.style.transition='all 0.2s';
+    } else if (isNotesDisplay) {
+      const note_text = document.querySelector(`#notes_text_${event.target.id}`);
+      note_text.style.fontSize = '550px';
+      note_text.style.transition='all 0.2s';
+    }
+  }
   if (isMouseDown) {
     if (event.target.classList.contains('piano-key')) {
       isMouseDown = true;
@@ -123,19 +137,31 @@ piano.addEventListener('mouseover', (event) => {
 })
 
 piano.addEventListener('mouseout', (event) => {
-  event.target.classList.remove('piano-key-active');
+  if (event.target.classList.contains('piano-key')) {
+    if (isLettersDisplay) {
+      const letter_text = document.querySelector(`#letters_text_${event.target.id}`);
+      letter_text.style.fontSize = '493.54px';
+      letter_text.style.transition='all 0.2s';
+    } else if (isNotesDisplay) {
+      const note_text = document.querySelector(`#notes_text_${event.target.id}`);
+      note_text.style.fontSize = '493.54px';
+      note_text.style.transition='all 0.2s';
+    }
 
-  if (isNotesDisplay) {
-    const element = document.querySelector(`#notes_text_${event.target.id}`);
-    element.style.fill = '#FFFFFF';
-  }
-  if (isLettersDisplay) {
-    const element = document.querySelector(`#letters_text_${event.target.id}`);
-    element.style.fill = '#FFF';
-  }
+    event.target.classList.remove('piano-key-active');
 
-  const line = document.querySelector(`#undeline_${event.target.id}`);
-  line.classList.add('underline-hidden');
+    if (isNotesDisplay) {
+      const element = document.querySelector(`#notes_text_${event.target.id}`);
+      element.style.fill = '#FFFFFF';
+    }
+    if (isLettersDisplay) {
+      const element = document.querySelector(`#letters_text_${event.target.id}`);
+      element.style.fill = '#FFF';
+    }
+
+    const line = document.querySelector(`#undeline_${event.target.id}`);
+    line.classList.add('underline-hidden');
+  }
 })
 
 // по нажатию клавиатуры
@@ -215,7 +241,7 @@ const fullscreenBtn = document.querySelector('#fullscreen-btn');
 fullscreenBtn.addEventListener('click', () => {
   fullscreenBtn.classList.toggle('fullscreen-btn');
   fullscreenBtn.classList.toggle('fullscreen-exit-btn');
-    const html = document.documentElement;
+  const html = document.documentElement;
   if (isFullscreen) {
     isFullscreen = false;
     fullScreenCancel();
@@ -236,12 +262,13 @@ function fullScreen(element) {
 }
 
 function fullScreenCancel() {
-  //alert('oops');
   if (document.exitFullscreen) {
     document.exitFullscreen();
-  } else if (document.webkitExitFullscreen) { /* Safari */
+  } else if (document.webkitExitFullscreen) {
+    /* Safari */
     document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) { /* IE11 */
+  } else if (document.msExitFullscreen) {
+    /* IE11 */
     document.msExitFullscreen();
   }
 }

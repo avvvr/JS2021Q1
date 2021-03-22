@@ -11,9 +11,25 @@
 </head>
 
 <body>
-  <main>
-    <audio src="./assets/audio/a.mp3"></audio>
-    <!--<button>Play audio</button>-->
+  <header class="header">
+      <button id="fullscreen-btn" class="fullscreen-btn"></button>
+      <div class="form_toggle">
+        <div class="form_toggle-item item-1">
+          <input id="notes-radiobtn" type="radio" name="radio" value="Notes" checked>
+          <label for="notes-radiobtn">Notes</label>
+        </div>
+        <div class="form_toggle-item item-2">
+          <input id="letter-radiobtn" type="radio" name="radio" value="Letters">
+          <label for="letter-radiobtn">Letters</label>
+        </div>
+      </div>
+    <div class="header-part part_one"></div>
+    <div class="header-part">
+    </div>
+    <div class="header-part">
+    </div>
+  </header>
+  <main class="main">
     <figure class="figure">
       <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="147mm" height="162mm" version="1.1"
         style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
@@ -325,19 +341,8 @@
         </g>
       </svg>
 
-      
+
     </figure>
-    <div class="form_toggle">
-      <div class="form_toggle-item item-1">
-        <input id="notes-radiobtn" type="radio" name="radio" value="Notes" checked>
-        <label for="notes-radiobtn">Notes</label>
-      </div>
-      <div class="form_toggle-item item-2">
-        <input id="letter-radiobtn" type="radio" name="radio" value="Letters">
-        <label for="letter-radiobtn">Letters</label>
-      </div>
-    </div>
-    <button id="fullscreen-btn" class="fullscreen-btn"></button>
   </main>
 </body>
 
