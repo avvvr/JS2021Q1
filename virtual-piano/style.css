@@ -8,9 +8,15 @@ body {
 }
 
 .piano-key:hover {
-  /*fill: #FFCD0A;*/
-  stroke-width: 80;
+  /*fill: #FFCD0A;
+  stroke-width: 80;*/
   cursor: pointer;
+  transition: all 0.2s;
+}
+
+.piano-key:active {
+  /*fill: #FFCD0A;*/
+  stroke-width: 20;
   transition: all 0.2s;
 }
 

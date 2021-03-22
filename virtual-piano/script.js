@@ -75,6 +75,9 @@ piano.addEventListener('mousedown', (event) => {
       const element = document.querySelector(`#letters_text_${note}`);
       element.style.fill = '#FFCD0A';
     }
+
+    const line = document.querySelector(`#undeline_${note}`);
+    line.classList.remove('underline-hidden');
   }
 });
 
@@ -89,6 +92,9 @@ window.addEventListener('mouseup', (event) => {
     const element = document.querySelector(`#letters_text_${event.target.id}`);
     element.style.fill = '#FFF';
   }
+
+  const line = document.querySelector(`#undeline_${event.target.id}`);
+  line.classList.add('underline-hidden');
 });
 
 piano.addEventListener('mouseover', (event) => {
@@ -109,6 +115,9 @@ piano.addEventListener('mouseover', (event) => {
         const element = document.querySelector(`#letters_text_${note}`);
         element.style.fill = '#FFCD0A';
       }
+
+      const line = document.querySelector(`#undeline_${note}`);
+      line.classList.remove('underline-hidden');
     }
   }
 })
@@ -124,6 +133,9 @@ piano.addEventListener('mouseout', (event) => {
     const element = document.querySelector(`#letters_text_${event.target.id}`);
     element.style.fill = '#FFF';
   }
+
+  const line = document.querySelector(`#undeline_${event.target.id}`);
+  line.classList.add('underline-hidden');
 })
 
 // по нажатию клавиатуры
@@ -143,6 +155,9 @@ window.addEventListener('keydown', (event) => {
         const element = document.querySelector(`#letters_text_${keySoundsMap.get(key).id}`);
         element.style.fill = '#FFCD0A';
       }
+
+      const line = document.querySelector(`#undeline_${keySoundsMap.get(key).id}`);
+      line.classList.remove('underline-hidden');
     }
   }
 })
@@ -161,6 +176,9 @@ window.addEventListener('keyup', (event) => {
         const element = document.querySelector(`#letters_text_${keySoundsMap.get(key).id}`);
         element.style.fill = '#FFF';
       }
+
+      const line = document.querySelector(`#undeline_${keySoundsMap.get(key).id}`);
+      line.classList.add('underline-hidden');
     }
   }
 })
