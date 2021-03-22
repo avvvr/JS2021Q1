@@ -8,18 +8,27 @@ body {
 }
 
 .piano-key:hover {
-  /*stroke-width: 80;*/
+  /*fill: #FFCD0A;*/
+  stroke-width: 80;
   cursor: pointer;
-  fill: #FFCD0A;
+  transition: all 0.2s;
 }
 
-.piano-key.piano-key-active,
+/*.piano-key.piano-key-active,
 .piano-key.sharp.piano-key-active {
   fill: #FF9832;
-}
+  stroke: #FF9832;
+  transition: all 0.2s;
+}*/
 
 /*.piano-key:active {
   opacity: 0.95;
   stroke: #FF9832;
   stroke: #FFCD0A;
 }*/
+
+.notes-hidden,
+.letters-hidden,
+.underline-hidden {
+  display: none;
+}
