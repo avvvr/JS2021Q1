@@ -189,3 +189,23 @@ function playAudio(src) {
   audio.currentTime = 0;
   audio.play();
 }
+
+const notes_radioBtn = document.querySelector('#notes-radiobtn');
+const letters_radioBtn = document.querySelector('#letters-radiobtn');
+const radio = document.querySelector('.form_toggle');
+const notes = document.querySelector('#notes');
+const letters = document.querySelector('#letters');
+radio.addEventListener('change', () => {
+  if (isLettersDisplay) {
+    isLettersDisplay = false;
+    isNotesDisplay = true;
+    letters.classList.add('letters-hidden');
+    notes.classList.remove('notes-hidden');
+
+  } else if (isNotesDisplay) {
+    isNotesDisplay = false;
+    isLettersDisplay = true;
+    notes.classList.add('notes-hidden');
+    letters.classList.remove('letters-hidden');
+  }
+})
