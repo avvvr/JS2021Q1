@@ -17,11 +17,15 @@ body {
 
 .header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   width: 1200px;
   height: 50px;
   margin-top: 40px;
+}
+
+.RSS-link{
+  width: 900px;
 }
 
 .form_toggle{
@@ -126,4 +130,23 @@ body {
 .fullscreen-exit-btn:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  margin: 30px 0;
+  font-weight: bolder;
+}
+
+.github{
+  text-decoration: line-through;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.github.github:hover{
+  text-decoration: none;
 }
