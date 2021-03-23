@@ -11,7 +11,7 @@ body {
   background-color: #F77156;
 }
 
-.test{
+.test {
   border: 1px solid black;
 }
 
@@ -24,11 +24,11 @@ body {
   margin-top: 40px;
 }
 
-.RSS-link{
+.RSS-link {
   width: 900px;
 }
 
-.form_toggle{
+.form_toggle {
   margin: 50px 0;
 }
 
@@ -132,7 +132,7 @@ body {
   opacity: 0.8;
 }
 
-.footer{
+.footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,12 +141,16 @@ body {
   font-weight: bolder;
 }
 
-.github{
+.github {
   text-decoration: line-through;
   font-weight: bolder;
   color: rgba(0, 0, 0, 0.9);
 }
 
-.github.github:hover{
+.github.github:hover {
   text-decoration: none;
+}
+
+.fil9 {
+  user-select: none;
 }
