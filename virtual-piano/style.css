@@ -11,28 +11,29 @@ body {
   background-color: #F77156;
 }
 
+.test{
+  border: 1px solid black;
+}
+
 .header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  /*width: 1200px;*/
+  width: 1200px;
+  height: 50px;
+  margin-top: 40px;
 }
 
 .form_toggle{
   margin: 50px 0;
 }
 
-.fullscreen-btn{
-  margin-top: 30px;
-}
-
-
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*width: 1200px;*/
+  width: 1200px;
+  margin-top: 40px;
 }
 
 .piano-key:hover {
@@ -107,17 +108,18 @@ body {
 .fullscreen-exit-btn {
   background-color: transparent;
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   outline: none;
+  margin-left: 50px;
 }
 
 .fullscreen-btn {
-  background-image: url('./assets/img/fullscreen.svg');
+  background: url('./assets/img/fullscreen.svg') no-repeat;
 }
 
 .fullscreen-exit-btn {
-  background-image: url('./assets/img/exit-fullscreen.svg');
+  background: url('./assets/img/fullscreen-exit.svg') no-repeat;
 }
 
 .fullscreen-btn:hover,
