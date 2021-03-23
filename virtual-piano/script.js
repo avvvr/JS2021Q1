@@ -82,7 +82,7 @@ piano.addEventListener('mousedown', (event) => {
 });
 
 window.addEventListener('mouseup', (event) => {
-    isMouseDown = false;
+  isMouseDown = false;
   if (event.target.classList.contains('piano-key')) {
     event.target.classList.remove('piano-key-active');
     if (isNotesDisplay) {
@@ -104,11 +104,11 @@ piano.addEventListener('mouseover', (event) => {
     if (isLettersDisplay) {
       const letter_text = document.querySelector(`#letters_text_${event.target.id}`);
       letter_text.style.fontSize = '550px';
-      letter_text.style.transition='all 0.2s';
+      letter_text.style.transition = 'all 0.2s';
     } else if (isNotesDisplay) {
       const note_text = document.querySelector(`#notes_text_${event.target.id}`);
       note_text.style.fontSize = '550px';
-      note_text.style.transition='all 0.2s';
+      note_text.style.transition = 'all 0.2s';
     }
   }
   if (isMouseDown) {
@@ -139,11 +139,11 @@ piano.addEventListener('mouseout', (event) => {
     if (isLettersDisplay) {
       const letter_text = document.querySelector(`#letters_text_${event.target.id}`);
       letter_text.style.fontSize = '493.54px';
-      letter_text.style.transition='all 0.2s';
+      letter_text.style.transition = 'all 0.2s';
     } else if (isNotesDisplay) {
       const note_text = document.querySelector(`#notes_text_${event.target.id}`);
       note_text.style.fontSize = '493.54px';
-      note_text.style.transition='all 0.2s';
+      note_text.style.transition = 'all 0.2s';
     }
 
     event.target.classList.remove('piano-key-active');
@@ -237,14 +237,10 @@ radio.addEventListener('change', () => {
 let isFullscreen = false;
 const fullscreenBtn = document.querySelector('#fullscreen-btn');
 fullscreenBtn.addEventListener('click', () => {
-  fullscreenBtn.classList.toggle('fullscreen-btn');
-  fullscreenBtn.classList.toggle('fullscreen-exit-btn');
   const html = document.documentElement;
   if (isFullscreen) {
-    isFullscreen = false;
     fullScreenCancel();
   } else {
-    isFullscreen = true;
     fullScreen(html);
   }
 })
@@ -270,3 +266,13 @@ function fullScreenCancel() {
     document.msExitFullscreen();
   }
 }
+
+document.addEventListener('webkitfullscreenchange', (event) => {
+  if (document.fullscreenElement) {
+    isFullscreen = true;
+  } else {
+    isFullscreen = false;
+  }
+  fullscreenBtn.classList.toggle('fullscreen-btn');
+  fullscreenBtn.classList.toggle('fullscreen-exit-btn');
+});
