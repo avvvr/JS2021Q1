@@ -166,7 +166,7 @@ piano.addEventListener('mouseout', (event) => {
 
 window.addEventListener('keydown', (event) => {
   for (let key of keySoundsMap.keys()) {
-    if (key === event.code) {
+    if (!event.repeat && key === event.code) {
       let element = document.querySelector(`#${keySoundsMap.get(key).id}`);
       element.classList.add('piano-key-active');
       playAudio(`${keySoundsMap.get(key).link}`);
