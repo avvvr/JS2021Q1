@@ -82,9 +82,8 @@ piano.addEventListener('mousedown', (event) => {
 });
 
 window.addEventListener('mouseup', (event) => {
-  if (event.target.classList.contains('piano-key')) {
-
     isMouseDown = false;
+  if (event.target.classList.contains('piano-key')) {
     event.target.classList.remove('piano-key-active');
     if (isNotesDisplay) {
       const element = document.querySelector(`#notes_text_${event.target.id}`);
@@ -114,7 +113,6 @@ piano.addEventListener('mouseover', (event) => {
   }
   if (isMouseDown) {
     if (event.target.classList.contains('piano-key')) {
-      isMouseDown = true;
       const note = event.target.id;
       const src = `assets/audio/${note}.mp3`;
       playAudio(src);
