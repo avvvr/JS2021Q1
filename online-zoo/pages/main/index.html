@@ -10,24 +10,30 @@
 </head>
 
 <body>
-  <header>
-    <figure>
-      <a href="#">
-        <img src="../../assets/icons/zoo-online.svg" alt="zoo-online">
-      </a>
-    </figure>
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="">Zoos</a></li>
-      <li><a href="">Map</a></li>
-      <li><a href="">Contact Us</a></li>
-      <li><a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a></li>
-    </ul>
-    <div>
-      <label>
-        <input type="checkbox">
-        <span></span>
-      </label>
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="header__content">
+        <figure>
+          <a href="#">
+            <img src="../../assets/icons/logo.svg" alt="zoo-online">
+          </a>
+        </figure>
+        <nav>
+          <ul class="header__nav nav">
+            <li><a class="nav__item header__nav_item" href="#">About</a></li>
+            <li><a class="nav__item header__nav_item" href="">Zoos</a></li>
+            <li><a class="nav__item header__nav_item" href="">Map</a></li>
+            <li><a class="nav__item header__nav_item" href="">Contact Us</a></li>
+            <li><a class="nav__item" href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a></li>
+          </ul>
+        </nav>
+        <div>
+          <label class="switch">
+            <input class="switch__input" type="checkbox">
+            <span class="switch__slider switch__slider_round"></span>
+          </label>
+        </div>
+      </div>
     </div>
   </header>
 </body>
