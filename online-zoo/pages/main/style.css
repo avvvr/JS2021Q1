@@ -28,6 +28,10 @@
   align-items: center;
 }
 
+.header__h1_hidden{
+  display: none;
+}
+
 ul {
   display: inline-block;
   list-style: none;
