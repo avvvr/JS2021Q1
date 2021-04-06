@@ -25,6 +25,10 @@ body {
   border: 1px solid green;
 }
 
+
+/*header*/
+
+
 .header {
   box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
 }
@@ -68,7 +72,7 @@ ul {
 }
 
 .nav__item:active,
-.nav__item:visited{
+.nav__item:visited {
   color: #333;
 }
 
@@ -145,4 +149,15 @@ input:checked+.switch__slider:before {
 
 .switch__slider_round:before {
   border-radius: 50%;
+}
+
+
+/*watch-online section*/
+
+.watch-online {
+  width: 100%;
+  height: 940px;
+  background: url("../../assets/images/watch-online-bg.png") no-repeat;
+  background-size: cover;
+  position: relative;
 }
