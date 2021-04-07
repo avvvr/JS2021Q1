@@ -293,6 +293,10 @@ button {
   transition: all 0.5s;
 }
 
+.slider__item_active .slider__item_text{
+  max-height: 200px;
+}
+
 .slider__btn-wrapper {
   display: flex;
   justify-content: space-between;
@@ -415,6 +419,8 @@ button {
   width: 30px;
   height: 10px;
   cursor: pointer;
+  border-radius: unset;
+  border: none;
 }
 
 .range__input_light::-moz-range-thumb {
@@ -668,6 +674,10 @@ button {
 .infographic__head {
   width: 132px;
   margin: 18px 0 54px 0;
+}
+
+.infographic__arrow{
+  width: 107px;
 }
 
 
