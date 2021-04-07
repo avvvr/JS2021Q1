@@ -12,8 +12,8 @@
 }
 
 body {
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  /*text-rendering: optimizeSpeed;
+  line-height: 1.5;*/
   font-family: 'Roboto', sans-serif;
 }
 
@@ -42,10 +42,15 @@ body {
 }
 
 .wrapper_m {
+  margin-top: 100px;
   max-width: 1200px;
 }
 
 .wrapper_sm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 790px;
 }
 
@@ -176,6 +181,7 @@ input:checked+.switch__slider:before {
 }
 
 .watch-online__wrapper {
+  max-width: 1200px;
   padding-top: 206px;
 }
 
@@ -325,6 +331,9 @@ button {
 
 .range {
   width: 245px;
+}
+
+.watch-online__range {
   margin-top: 20px;
   padding-left: 185px;
 }
@@ -337,26 +346,46 @@ button {
   font-weight: 900;
   font-size: 14px;
   line-height: 16px;
+}
 
+.range__text_light {
+  color: #bdbdbd;
+}
+
+.range__text_dark {
   color: #bdbdbd;
 }
 
 .range__span {
   font-size: 24px;
   line-height: 28px;
+}
 
+.range__span_light {
   color: #FEFEFE;
+}
+
+.range__span_dark {
+  color: #333;
 }
 
 .range__input {
   -webkit-appearance: none;
   width: 245px;
   height: 5px;
-  background: #bdbdbd;
   outline: none;
   opacity: 0.6;
   -webkit-transition: .2s;
   transition: opacity .2s;
+}
+
+.range__input_light {
+  background: #bdbdbd;
+}
+
+.range__input_dark {
+  background: rgba(189, 189, 189, 0.57);
+  ;
 }
 
 .range__input:hover {
@@ -366,17 +395,33 @@ button {
 .range__input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 30px;
   height: 10px;
-  background: #fefefe;
   cursor: pointer;
 }
 
-.range__input::-moz-range-thumb {
+.range__input_light::-webkit-slider-thumb {
   width: 30px;
-  height: 10px;
   background: #fefefe;
+}
+
+.range__input_dark::-webkit-slider-thumb {
+  width: 62px;
+  background: #333;
+}
+
+.range__input::-moz-range-thumb {
+  height: 10px;
   cursor: pointer;
+}
+
+.range__input_light::-moz-range-thumb {
+  width: 30px;
+  background: #fefefe;
+}
+
+.range__input_dark::-moz-range-thumb {
+  width: 62px;
+  background: #333;
 }
 
 .socials {
@@ -399,4 +444,35 @@ button {
 
 .how-it-works {
   height: 883px;
+  padding-top: 100px;
+
+  background: #fbfbfb;
+}
+
+.how-it-works__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 682px;
+}
+
+.head_h3 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+
+  color: #333;
+}
+
+.how-it-works_head {
+  width: 100%;
+}
+
+.paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #4f4f4f;
 }
