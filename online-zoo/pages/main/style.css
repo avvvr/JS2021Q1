@@ -33,8 +33,13 @@ body {
   box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
 }
 
-.header__wrapper {
-  max-width: 1620px;
+.wrapper_l {
+  max-width: 1618px;
+  margin: 0 auto;
+}
+
+.wrapper_sm{
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -162,11 +167,6 @@ input:checked+.switch__slider:before {
   position: relative;
 
   overflow-x: hidden;
-}
-
-.watch-online__wrapper{
-  max-width: 1618px;
-  margin: 0 auto;
 }
 
 .watch-online__content {
