@@ -254,8 +254,8 @@ button {
 
 .slider__item {
   position: relative;
-  width: 140px;
-  height: 203px;
+  /*width: 140px;
+  height: 203px;*/
 }
 
 .slider__item:hover {
