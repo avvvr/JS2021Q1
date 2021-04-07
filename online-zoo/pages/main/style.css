@@ -99,10 +99,6 @@ ul {
   cursor: default;
 }
 
-/*.nav__item_active:hover{
-  cursor: default;
-}*/
-
 .header__nav_item {
   color: #333;
 }
@@ -229,8 +225,7 @@ button {
   color: #fff;
 }
 
-.watch-button:hover,
-.buttton:hover {
+.watch-button:hover {
   background: linear-gradient(106.89deg, rgb(66, 190, 159) -14.32%, #45c9d3 100.68%);
   transition: 0.2s;
   cursor: pointer;
@@ -390,7 +385,6 @@ button {
 
 .range__input_dark {
   background: rgba(189, 189, 189, 0.57);
-  ;
 }
 
 .range__input:hover {
@@ -468,6 +462,7 @@ button {
 }
 
 .head_h3 {
+  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-size: 48px;
   line-height: 56px;
@@ -491,6 +486,7 @@ button {
 
 /*our-inspiration section*/
 
+
 .our-inspiration {
   height: 413px;
   padding-top: 100px;
@@ -510,13 +506,14 @@ button {
 }
 
 .head_h4 {
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
 
-  color: #333333;
+  color: #333;
 }
 
 .our-inspiration__head {
@@ -587,16 +584,16 @@ button {
   height: 399px;
 }
 
-.pets-in-zoo__slider-item:hover .pets-in-zoo__slider-img{
+.pets-in-zoo__slider-item:hover .pets-in-zoo__slider-img {
   cursor: pointer;
   opacity: 0.6;
 }
 
-.pets-in-zoo__slider-item:hover .slider__item_text{
+.pets-in-zoo__slider-item:hover .slider__item_text {
   max-height: 200px;
 }
 
-.pets-in-zoo__slider-img{
+.pets-in-zoo__slider-img {
   transition: all 0.5s;
 }
 
@@ -609,9 +606,7 @@ button {
 
   background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
   border-radius: 3px;
-}
 
-.button-text {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -622,4 +617,55 @@ button {
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
+
+  transition: all 0.2s;
+}
+
+.button:hover {
+  background: linear-gradient(106.89deg, rgb(66, 190, 159) -14.32%, #45c9d3 100.68%);
+  transition: all 1.8s;
+}
+
+
+/*pay-and-feed section*/
+
+
+.pay-and-feed {
+  height: 754px;
+  background: #f2f2f2;
+}
+
+.pay-and-feed__wrapper {
+  padding-top: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pay-and-feed__head {
+  margin-bottom: 30px;
+}
+
+.infographic {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 1200px;
+  margin: 92px 0 60px 0;
+}
+
+.infographic__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 245px;
+  height: 245px;
+
+  border: 3px solid #4bd8b5;
+  border-radius: 50%;
+}
+
+.infographic__head {
+  width: 132px;
+  margin: 18px 0 54px 0;
 }
