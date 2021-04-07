@@ -42,7 +42,8 @@ body {
 }
 
 .wrapper_m {
-  margin-top: 100px;
+  display: flex;
+  justify-content: center;
   max-width: 1200px;
 }
 
@@ -449,7 +450,7 @@ button {
   background: #fbfbfb;
 }
 
-.how-it-works__wrapper{
+.how-it-works__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -475,4 +476,39 @@ button {
   line-height: 16px;
 
   color: #4f4f4f;
+}
+
+
+/*our-inspiration section*/
+
+.our-inspiration {
+  height: 413px;
+  padding-top: 100px;
+
+  background: #f2f2f2;
+}
+
+.our-inspiration__wrapper {
+  justify-content: space-between;
+}
+
+.our-inspiration__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+}
+
+.head_h4 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+
+  color: #333333;
+}
+
+.our-inspiration__head {
+  margin: 15px 0;
 }
