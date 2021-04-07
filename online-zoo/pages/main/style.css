@@ -227,16 +227,16 @@ button {
   text-transform: uppercase;
 
   color: #fff;
-
 }
 
-.watch-button:hover {
+.watch-button:hover,
+.buttton:hover {
   background: linear-gradient(106.89deg, rgb(66, 190, 159) -14.32%, #45c9d3 100.68%);
   transition: 0.2s;
   cursor: pointer;
 }
 
-.slider {
+.watch-online__slider {
   position: absolute;
   bottom: 110px;
   right: -45px;
@@ -254,8 +254,8 @@ button {
 
 .slider__item {
   position: relative;
-  /*width: 140px;
-  height: 203px;*/
+  width: 140px;
+  height: 203px;
 }
 
 .slider__item:hover {
@@ -279,10 +279,12 @@ button {
 
 .slider__item_text {
   position: absolute;
+  bottom: 34px;
+  max-height: 0;
+  overflow: hidden;
   width: 190px;
   /*197*/
   height: 86px;
-  bottom: 34px;
   margin-right: 23px;
   margin-left: 25px;
 
@@ -292,6 +294,8 @@ button {
   line-height: 16px;
 
   color: #fff;
+
+  transition: all 0.5s;
 }
 
 .slider__btn-wrapper {
@@ -375,7 +379,7 @@ button {
   width: 245px;
   height: 5px;
   outline: none;
-  opacity: 0.6;
+  /*opacity: 0.6;*/
   -webkit-transition: .2s;
   transition: opacity .2s;
 }
@@ -396,33 +400,39 @@ button {
 .range__input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
+  width: 30px;
   height: 10px;
   cursor: pointer;
 }
 
 .range__input_light::-webkit-slider-thumb {
-  width: 30px;
   background: #fefefe;
 }
 
 .range__input_dark::-webkit-slider-thumb {
-  width: 62px;
   background: #333;
 }
 
+.range__input_large::-webkit-slider-thumb {
+  width: 62px;
+}
+
 .range__input::-moz-range-thumb {
+  width: 30px;
   height: 10px;
   cursor: pointer;
 }
 
 .range__input_light::-moz-range-thumb {
-  width: 30px;
   background: #fefefe;
 }
 
 .range__input_dark::-moz-range-thumb {
-  width: 62px;
   background: #333;
+}
+
+.range__input_large::-moz-range-thumb {
+  width: 62px;
 }
 
 .socials {
@@ -511,4 +521,105 @@ button {
 
 .our-inspiration__head {
   margin: 15px 0;
+}
+
+/*pets-in-zoo section*/
+
+.pets-in-zoo {
+  height: 854px;
+  padding-top: 100px;
+
+  background: #fbfbfb;
+}
+
+.pets-in-zoo__wrapper {
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 654px;
+}
+
+.pets-in-zoo__head {
+  text-align: center;
+}
+
+.pets-in-zoo__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 478px;
+  margin-top: 5px;
+}
+
+.pets-in-zoo__slider {
+  display: flex;
+  align-items: center;
+}
+
+.left-arrow {
+  position: relative;
+  padding-right: 20px;
+}
+
+.right-arrow {
+  position: relative;
+  margin-left: 20px;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.pets-in-zoo__slider-content {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.pets-in-zoo__slider-item {
+  background-color: black;
+  border-radius: 5px;
+  position: relative;
+  width: 277px;
+  height: 399px;
+}
+
+.pets-in-zoo__slider-item:hover .pets-in-zoo__slider-img{
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.pets-in-zoo__slider-item:hover .slider__item_text{
+  max-height: 200px;
+}
+
+.pets-in-zoo__slider-img{
+  transition: all 0.5s;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 245px;
+  height: 55px;
+
+  background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+  border-radius: 3px;
+}
+
+.button-text {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
 }
