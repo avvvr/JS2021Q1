@@ -216,6 +216,7 @@ button {
 
 .watch-button__text {
   margin-left: 5px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .watch-button:hover {
@@ -226,8 +227,8 @@ button {
 
 .slider {
   position: absolute;
-  bottom: 100px;
-  right: -50px;
+  bottom: 110px;
+  right: -45px;
   width: 989px; /*945*/
 }
 
@@ -253,20 +254,20 @@ button {
   position: relative;
   width: 245px;
   height: 352px;
+  margin-top: -29px;
 }
 
 .slider__line-img {
   position: absolute;
   right: 0;
   left: -135px;
-  top: 40%;
+  top: 156px;
   z-index: 0;
 }
 
 .slider__item_text {
   position: absolute;
-  width: 197px;
-  /*197*/
+  width: 190px; /*197*/
   height: 86px;
   bottom: 34px;
   margin-right: 23px;
@@ -319,7 +320,7 @@ button {
 .range {
   width: 245px;
   margin-top: 20px;
-  padding-left: 175px;
+  padding-left: 185px;
 }
 
 .range__text {
