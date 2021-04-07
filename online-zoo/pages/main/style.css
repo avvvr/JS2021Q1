@@ -203,20 +203,19 @@ button {
   background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
   border-radius: 3px;
 
-  font-style: normal;
+  transition: 0.2s;
+}
+
+.watch-button__text {
+  margin-left: 5px;
+  font-family: 'Roboto', sans-serif;font-style: normal;
   font-weight: 900;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
 
   color: #fff;
-
-  transition: 0.2s;
-}
-
-.watch-button__text {
-  margin-left: 5px;
-  font-family: 'Roboto', sans-serif;
+  
 }
 
 .watch-button:hover {
@@ -385,4 +384,12 @@ button {
   flex-direction: column;
   justify-content: space-between;
   height: 114px;
+}
+
+
+/*how-it-works section*/
+
+
+.how-it-works{
+  height: 883px;
 }
