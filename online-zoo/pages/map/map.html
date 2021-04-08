@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <title>Map</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="header">
     <div class="wrapper wrapper_l">
@@ -36,7 +38,167 @@
       </div>
     </div>
   </header>
-  <main></main>
+  <main>
+    <section class="map">
+      <div class="wrapper wrapper_m map__wrapper">
+        <h3 class="head_h3 map__head">Choose your favorite</h3>
+        <div class="paragraph">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat, and we are determined to assist in all aspects, including providing veterinary support and raising much-needed emergency funds. Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives. Animals have the right to a pain-free and happy life. They have equal claim to the resources of this planet, and deserve a life of dignity and compassion.As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.</div>
+        <div class="map__slider">
+          <figure class="slider__arrow">
+            <img src="../../assets/icons/left-arrow.svg" alt="left">
+          </figure>
+          <div class="map__slider-elements">
+            <figure>
+              <img src="../../assets/images/map_01.png" alt="gorilla">
+            </figure>
+            <figure>
+              <img src="../../assets/images/map_02.png" alt="panda">
+            </figure>
+            <figure>
+              <img src="../../assets/images/map_03.png" alt="alligator">
+            </figure>
+            <figure>
+              <img src="../../assets/images/map_04.png" alt="eagle">
+            </figure>
+            <figure>
+              <img src="../../assets/images/map_05.png" alt="tiger">
+            </figure>
+            <figure>
+              <img src="../../assets/images/map_06.png" alt="elephant">
+            </figure>
+            <figure>
+              <img src="../../assets/images/map_07.png" alt="lion">
+            </figure>
+            <figure>
+              <img src="../../assets/images/map_08.png" alt="zebra">
+            </figure>
+          </div>
+          <figure class="slider__arrow">
+            <img src="../../assets/icons/right-arrow.svg" alt="right">
+          </figure>
+        </div>
+        <div class="range">
+          <p class="range__text range__text_dark"><span class="range__span range__span_dark">02/</span>08</p>
+          <input class="range__input range__input_dark" type="range" min="1" max="8" value="2" id="myRange2">
+        </div>
+        <div class="map__content">
+          <div class="map-animal eagle">
+            <div class="map-animal__location">
+              <img class="map-animal__img" id="eagle-img" src="../../assets/images/elipse_eagle.png" alt="eagle">
+              <svg width="67" height="94" viewBox="0 0 67 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="svg-location" id="eagle-svg-location"
+                  d="M33.6913 0.150391C15.4582 0.150391 0.625 14.9853 0.625 33.2206C0.625 50.8607 30.8554 91.051 32.1431 92.7551C32.5049 93.2415 33.0846 93.5254 33.6915 93.5254C34.2983 93.5254 34.878 93.2415 35.2398 92.7551C36.5274 91.051 66.7579 50.8609 66.7579 33.2206C66.7576 14.9853 51.9244 0.150391 33.6913 0.150391ZM33.6913 50.7285C24.0398 50.7285 16.1856 42.8733 16.1856 33.2206C16.1856 23.568 24.0398 15.7128 33.6913 15.7128C43.3428 15.7128 51.197 23.568 51.197 33.2206C51.197 42.8733 43.3428 50.7285 33.6913 50.7285Z"
+                  fill="url(#paint0_linear)" />
+                <defs>
+                  <linearGradient id="paint0_linear" x1="-11.7233" y1="0.15039" x2="83.0362" y2="20.5233"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4BD8B5" />
+                    <stop offset="1" stop-color="#49D6DF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="map-animal__info">
+              <img class="map-animal__info-img" src="../../assets/images/elipse_eagle.png" alt="eagle">
+              <div>
+                <h4 class="head_h4 map-animal__header">West End Bald Eagle</h4>
+                <div class="paragraph region"><span class="paragraph__head">Region:</span> on an island near Los Angeles
+                </div>
+                <div class="paragraph"><span class="paragraph__head">Population:</span> more than 270 pairs in 2013
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map-animal alligator">
+            <div class="map-animal__location">
+              <img class="map-animal__img" id="alligator-img" src="../../assets/images/elipse_alligator.png"
+                alt="alligator">
+              <svg width="67" height="94" viewBox="0 0 67 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="svg-location" id="alligator-svg-location"
+                  d="M33.6913 0.150391C15.4582 0.150391 0.625 14.9853 0.625 33.2206C0.625 50.8607 30.8554 91.051 32.1431 92.7551C32.5049 93.2415 33.0846 93.5254 33.6915 93.5254C34.2983 93.5254 34.878 93.2415 35.2398 92.7551C36.5274 91.051 66.7579 50.8609 66.7579 33.2206C66.7576 14.9853 51.9244 0.150391 33.6913 0.150391ZM33.6913 50.7285C24.0398 50.7285 16.1856 42.8733 16.1856 33.2206C16.1856 23.568 24.0398 15.7128 33.6913 15.7128C43.3428 15.7128 51.197 23.568 51.197 33.2206C51.197 42.8733 43.3428 50.7285 33.6913 50.7285Z"
+                  fill="url(#paint0_linear)" />
+                <defs>
+                  <linearGradient id="paint0_linear" x1="-11.7233" y1="0.15039" x2="83.0362" y2="20.5233"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4BD8B5" />
+                    <stop offset="1" stop-color="#49D6DF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="map-animal__info">
+              <img class="map-animal__info-img" src="../../assets/images/elipse_alligator.png" alt="alligator">
+              <div>
+                <h4 class="head_h4 map-animal__header">Alligator</h4>
+                <div class="paragraph region"><span class="paragraph__head">Region:</span> on an island near Los Angeles
+                </div>
+                <div class="paragraph"><span class="paragraph__head">Population:</span> more than 270 pairs in 2013
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map-animal gorilla">
+            <div class="map-animal__location">
+              <img class="map-animal__img" id="gorilla-img" src="../../assets/images/elipse_gorilla.png" alt="gorilla">
+              <svg width="67" height="94" viewBox="0 0 67 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="svg-location" id="gorilla-svg-location"
+                  d="M33.6913 0.150391C15.4582 0.150391 0.625 14.9853 0.625 33.2206C0.625 50.8607 30.8554 91.051 32.1431 92.7551C32.5049 93.2415 33.0846 93.5254 33.6915 93.5254C34.2983 93.5254 34.878 93.2415 35.2398 92.7551C36.5274 91.051 66.7579 50.8609 66.7579 33.2206C66.7576 14.9853 51.9244 0.150391 33.6913 0.150391ZM33.6913 50.7285C24.0398 50.7285 16.1856 42.8733 16.1856 33.2206C16.1856 23.568 24.0398 15.7128 33.6913 15.7128C43.3428 15.7128 51.197 23.568 51.197 33.2206C51.197 42.8733 43.3428 50.7285 33.6913 50.7285Z"
+                  fill="url(#paint0_linear)" />
+                <defs>
+                  <linearGradient id="paint0_linear" x1="-11.7233" y1="0.15039" x2="83.0362" y2="20.5233"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4BD8B5" />
+                    <stop offset="1" stop-color="#49D6DF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="map-animal__info">
+              <img class="map-animal__info-img" src="../../assets/images/elipse_gorilla.png" alt="gorilla">
+              <div>
+                <h4 class="head_h4 map-animal__header">Gorilla</h4>
+                <div class="paragraph region"><span class="paragraph__head">Region:</span> on an island near Los Angeles
+                </div>
+                <div class="paragraph"><span class="paragraph__head">Population:</span> more than 270 pairs in 2013
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map-animal panda">
+            <div class="map-animal__location">
+              <img class="map-animal__img" id="panda-img" src="../../assets/images/elipse_panda.png" alt="panda">
+              <svg width="67" height="94" viewBox="0 0 67 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="svg-location svg-location_active" id="panda-svg-location"
+                  d="M33.6913 0.150391C15.4582 0.150391 0.625 14.9853 0.625 33.2206C0.625 50.8607 30.8554 91.051 32.1431 92.7551C32.5049 93.2415 33.0846 93.5254 33.6915 93.5254C34.2983 93.5254 34.878 93.2415 35.2398 92.7551C36.5274 91.051 66.7579 50.8609 66.7579 33.2206C66.7576 14.9853 51.9244 0.150391 33.6913 0.150391ZM33.6913 50.7285C24.0398 50.7285 16.1856 42.8733 16.1856 33.2206C16.1856 23.568 24.0398 15.7128 33.6913 15.7128C43.3428 15.7128 51.197 23.568 51.197 33.2206C51.197 42.8733 43.3428 50.7285 33.6913 50.7285Z"
+                  fill="url(#paint0_linear)" />
+                <defs>
+                  <linearGradient id="paint0_linear" x1="-11.7233" y1="0.15039" x2="83.0362" y2="20.5233"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4BD8B5" />
+                    <stop offset="1" stop-color="#49D6DF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="map-animal__info map-animal__info_panda">
+              <img class="map-animal__info-img" src="../../assets/images/elipse_panda.png" alt="panda">
+              <div>
+                <h4 class="head_h4 map-animal__header">Panda</h4>
+                <div class="paragraph region"><span class="paragraph__head">Region:</span> on an island near Los Angeles
+                </div>
+                <div class="paragraph"><span class="paragraph__head">Population:</span> more than 270 pairs in 2013
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="watch-button">
+          <img src="../../assets/icons/watch-online.svg" alt>
+          <div class="watch-button__text">watch online</div>
+        </button>
+      </div>
+    </section>
+  </main>
   <footer class="footer">
     <div class="wrapper wrapper_l">
       <div class="footer__top">
@@ -128,4 +290,5 @@
     </div>
   </footer>
 </body>
+
 </html>
