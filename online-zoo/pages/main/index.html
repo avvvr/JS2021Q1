@@ -25,7 +25,8 @@
             <li><a class="nav__item header__nav_item" href="">Zoos</a></li>
             <li><a class="nav__item header__nav_item" href="">Map</a></li>
             <li><a class="nav__item header__nav_item" href="">Contact Us</a></li>
-            <li><a class="nav__item" href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a></li>
+            <li><a class="nav__item header__nav_item"
+                href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a></li>
           </ul>
         </nav>
         <div>
@@ -438,52 +439,58 @@
       </div>
     </section>
   </main>
-  <footer>
-    <div class="wrapper_l">
-      <div>
-        <div>
-          <figure>
+  <footer class="footer">
+    <div class="wrapper wrapper_l test1">
+      <div class="footer__top">
+        <div class="footer__left">
+          <figure class="footer__logo">
             <a href="#">
-            <img src="../../assets/icons/logo_light.svg" alt="zoo-online">
-          </a>
+              <img src="../../assets/icons/logo_light.svg" alt="zoo-online">
+            </a>
           </figure>
           <h5 class="head_h5">Contact us</h5>
-          <form action="">
-            <input type="text" placeholder="Name" name="" id="" required>
-            <input type="email" placeholder="Email" name="" id="" required>
-            <fieldset>
-              <legend>Please enter your message</legend>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+          <form class="form" action="">
+            <input class="form__input" type="text" placeholder="Name" name="name" id="input-name" required><br>
+            <input class="form__input" type="email" placeholder="Email" name="email" id="input-email" required>
+            <fieldset class="footer__fieldset">
+              <legend class="fieldset__legend">Please enter your message</legend>
+              <textarea class="fieldset__textarea" name="textarea" id="footer_textarea" cols="43" rows="6"
+                maxlength="300"></textarea>
             </fieldset>
             <div>
-              <input type="checkbox" name="" id="" required>
-              <label for="">I agree to the processing of Personal Data</label>
+              <input class="footer__checkbox" type="checkbox" name="" id="input-checkbox" required>
+              <label class="footer__label" for="input-checkbox">I agree to the processing of Personal Data</label>
             </div>
-            <button type="submit">Send</button>
+            <button class="submit-btn" type="submit">
+              <div class="submit-btn__content">
+                <div>Send</div>
+                <img src="../../assets/icons/send-btn_arrow.svg" alt>
+              </div>
+            </button>
           </form>
         </div>
-        <div>
+        <div class="footer__middle test1">
           <nav>
-          <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Zoos</a></li>
-            <li><a href="">Map</a></li>
-            <li><a href="">Design</a></li>
-          </ul>
-        </nav>
-          <div>ZOO Online Centre</div>
+            <ul class="nav footer__nav">
+              <li><a class="nav__item footer__nav-item" href="">About</a></li>
+              <li><a class="nav__item footer__nav-item" href="">Zoos</a></li>
+              <li><a class="nav__item footer__nav-item" href="">Map</a></li>
+              <li><a class="nav__item footer__nav-item"
+                  href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a></li>
+            </ul>
+          </nav>
+          <div class="footer_middle-head">ZOO Online Centre</div>
           <div>
-            <div>
-              <div>132, Address District, Street</div>
+            <div class="middle-text footer__middle-text_top">
+              <div class="middle-text__first-child">132, Address District, Street</div>
               <div>Open Daily 10:00 am - 5:00 pm</div>
             </div>
-            <div>
-              <div>T(702) 163-3433</div>
+            <div class="middle-text">
+              <div class="middle-text__first-child">T(702) 163-3433</div>
               <div>zoo.online@gmail.com</div>
             </div>
             <div>
-              <div class="socials">
-                <ul class="socials__wrapper">
+                <ul class="footer__socials">
                   <li>
                     <a class="socials__item" href="">
                       <img src="../../assets/icons/inst.svg" alt="instagram">
@@ -496,25 +503,24 @@
                   </li>
                   <li>
                     <a class="socials__item" href="">
-                      <img src="../../assets/icons/youtube.svg" alt="youtube">
+                      <img src="../../assets/icons/vk.svg" alt="vkontakte">
                     </a>
                   </li>
                   <li>
                     <a class="socials__item" href="">
-                      <img src="../../assets/icons/vk.svg" alt="vkontakte">
+                      <img src="../../assets/icons/youtube.svg" alt="youtube">
                     </a>
                   </li>
                 </ul>
-              </div>
             </div>
           </div>
         </div>
-        <div>
-          <a class="button" href="">Choose your favorite</a>
+        <div class="footer__right">
+          <a class="button footer__button" href="">Choose your favorite</a>
         </div>
       </div>
-      <div>
-        <div>©Noora Sagnayeva</div>
+      <div class="footer__bottom">
+        <div class="footer__bottom_first">©Noora Sagnayeva</div>
         <div>©RSSchool and ©Yem Digital - 2021</div>
       </div>
     </div>
