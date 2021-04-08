@@ -1058,6 +1058,7 @@ button {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+  text-decoration: none;
 
   color: #FEFEFE;
 }
