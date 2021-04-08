@@ -317,15 +317,15 @@
         <a class="button" href="">Leave feedback</a>
       </div>
     </section>
-    <section>
-      <div class="wrapper wrapper_m">
-        <h3>Map</h3>
-        <div>
-          <div>
-            <div>
-              <img src="../../assets/images/elipse_eagle.png" alt="eagle">
+    <section class="map">
+      <div class="wrapper wrapper_m map__wrapper">
+        <h3 class="head_h3 map__head">Map</h3>
+        <div class="map__content">
+          <div class="map-animal eagle">
+            <div class="map-animal__location">
+              <img class="map-animal__img" id="eagle-img" src="../../assets/images/elipse_eagle.png" alt="eagle">
               <svg width="67" height="94" viewBox="0 0 67 94" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
+                <path class="svg-location" id="eagle-svg-location"
                   d="M33.6913 0.150391C15.4582 0.150391 0.625 14.9853 0.625 33.2206C0.625 50.8607 30.8554 91.051 32.1431 92.7551C32.5049 93.2415 33.0846 93.5254 33.6915 93.5254C34.2983 93.5254 34.878 93.2415 35.2398 92.7551C36.5274 91.051 66.7579 50.8609 66.7579 33.2206C66.7576 14.9853 51.9244 0.150391 33.6913 0.150391ZM33.6913 50.7285C24.0398 50.7285 16.1856 42.8733 16.1856 33.2206C16.1856 23.568 24.0398 15.7128 33.6913 15.7128C43.3428 15.7128 51.197 23.568 51.197 33.2206C51.197 42.8733 43.3428 50.7285 33.6913 50.7285Z"
                   fill="url(#paint0_linear)" />
                 <defs>
@@ -337,20 +337,22 @@
                 </defs>
               </svg>
             </div>
-            <div>
-              <img src="../../assets/images/elipse_eagle.png" alt="eagle">
+            <div class="map-animal__info">
+              <img class="map-animal__info-img" src="../../assets/images/elipse_eagle.png" alt="eagle">
               <div>
-                <h4>West End Bald Eagle</h4>
-                <div>Region: on an island near Los Angeles</div>
-                <div>Population: more than 270 pairs in 2013</div>
+                <h4 class="head_h4 map-animal__header">West End Bald Eagle</h4>
+                <div class="paragraph region"><span class="paragraph__head">Region:</span> on an island near Los Angeles</div>
+                <div class="paragraph"><span class="paragraph__head">Population:</span> more than 270 pairs in 2013
+                </div>
               </div>
             </div>
           </div>
-          <div>
-            <div>
-              <img src="../../assets/images/elipse_alligator.png" alt="alligator">
+          <div class="map-animal alligator">
+            <div class="map-animal__location">
+              <img class="map-animal__img" id="alligator-img" src="../../assets/images/elipse_alligator.png"
+                alt="alligator">
               <svg width="67" height="94" viewBox="0 0 67 94" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
+                <path class="svg-location" id="alligator-svg-location"
                   d="M33.6913 0.150391C15.4582 0.150391 0.625 14.9853 0.625 33.2206C0.625 50.8607 30.8554 91.051 32.1431 92.7551C32.5049 93.2415 33.0846 93.5254 33.6915 93.5254C34.2983 93.5254 34.878 93.2415 35.2398 92.7551C36.5274 91.051 66.7579 50.8609 66.7579 33.2206C66.7576 14.9853 51.9244 0.150391 33.6913 0.150391ZM33.6913 50.7285C24.0398 50.7285 16.1856 42.8733 16.1856 33.2206C16.1856 23.568 24.0398 15.7128 33.6913 15.7128C43.3428 15.7128 51.197 23.568 51.197 33.2206C51.197 42.8733 43.3428 50.7285 33.6913 50.7285Z"
                   fill="url(#paint0_linear)" />
                 <defs>
@@ -362,20 +364,21 @@
                 </defs>
               </svg>
             </div>
-            <div>
-              <img src="../../assets/images/elipse_alligator.png" alt="alligator">
+            <div class="map-animal__info">
+              <img class="map-animal__info-img" src="../../assets/images/elipse_alligator.png" alt="alligator">
               <div>
-                <h4>Alligator</h4>
-                <div>Region: on an island near Los Angeles</div>
-                <div>Population: more than 270 pairs in 2013</div>
+                <h4 class="head_h4 map-animal__header">Alligator</h4>
+                <div class="paragraph region"><span class="paragraph__head">Region:</span> on an island near Los Angeles</div>
+                <div class="paragraph"><span class="paragraph__head">Population:</span> more than 270 pairs in 2013
+                </div>
               </div>
             </div>
           </div>
-          <div>
-            <div>
-              <img src="../../assets/images/elipse_gorilla.png" alt="gorilla">
+          <div class="map-animal gorilla">
+            <div class="map-animal__location">
+              <img class="map-animal__img" id="gorilla-img" src="../../assets/images/elipse_gorilla.png" alt="gorilla">
               <svg width="67" height="94" viewBox="0 0 67 94" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
+                <path class="svg-location" id="gorilla-svg-location"
                   d="M33.6913 0.150391C15.4582 0.150391 0.625 14.9853 0.625 33.2206C0.625 50.8607 30.8554 91.051 32.1431 92.7551C32.5049 93.2415 33.0846 93.5254 33.6915 93.5254C34.2983 93.5254 34.878 93.2415 35.2398 92.7551C36.5274 91.051 66.7579 50.8609 66.7579 33.2206C66.7576 14.9853 51.9244 0.150391 33.6913 0.150391ZM33.6913 50.7285C24.0398 50.7285 16.1856 42.8733 16.1856 33.2206C16.1856 23.568 24.0398 15.7128 33.6913 15.7128C43.3428 15.7128 51.197 23.568 51.197 33.2206C51.197 42.8733 43.3428 50.7285 33.6913 50.7285Z"
                   fill="url(#paint0_linear)" />
                 <defs>
@@ -387,20 +390,21 @@
                 </defs>
               </svg>
             </div>
-            <div>
-              <img src="../../assets/images/elipse_gorilla.png" alt="gorilla">
+            <div class="map-animal__info">
+              <img class="map-animal__info-img" src="../../assets/images/elipse_gorilla.png" alt="gorilla">
               <div>
-                <h4>Gorilla</h4>
-                <div>Region: on an island near Los Angeles</div>
-                <div>Population: more than 270 pairs in 2013</div>
+                <h4 class="head_h4 map-animal__header">Gorilla</h4>
+                <div class="paragraph region"><span class="paragraph__head">Region:</span> on an island near Los Angeles</div>
+                <div class="paragraph"><span class="paragraph__head">Population:</span> more than 270 pairs in 2013
+                </div>
               </div>
             </div>
           </div>
-          <div>
-            <div>
-              <img src="../../assets/images/elipse_panda.png" alt="panda">
+          <div class="map-animal panda">
+            <div class="map-animal__location">
+              <img class="map-animal__img" id="panda-img" src="../../assets/images/elipse_panda.png" alt="panda">
               <svg width="67" height="94" viewBox="0 0 67 94" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
+                <path class="svg-location" id="panda-svg-location"
                   d="M33.6913 0.150391C15.4582 0.150391 0.625 14.9853 0.625 33.2206C0.625 50.8607 30.8554 91.051 32.1431 92.7551C32.5049 93.2415 33.0846 93.5254 33.6915 93.5254C34.2983 93.5254 34.878 93.2415 35.2398 92.7551C36.5274 91.051 66.7579 50.8609 66.7579 33.2206C66.7576 14.9853 51.9244 0.150391 33.6913 0.150391ZM33.6913 50.7285C24.0398 50.7285 16.1856 42.8733 16.1856 33.2206C16.1856 23.568 24.0398 15.7128 33.6913 15.7128C43.3428 15.7128 51.197 23.568 51.197 33.2206C51.197 42.8733 43.3428 50.7285 33.6913 50.7285Z"
                   fill="url(#paint0_linear)" />
                 <defs>
@@ -412,12 +416,13 @@
                 </defs>
               </svg>
             </div>
-            <div>
-              <img src="../../assets/images/elipse_panda.png" alt="panda">
+            <div class="map-animal__info map-animal__info_panda">
+              <img class="map-animal__info-img" src="../../assets/images/elipse_panda.png" alt="panda">
               <div>
-                <h4>Panda</h4>
-                <div>Region: on an island near Los Angeles</div>
-                <div>Population: more than 270 pairs in 2013</div>
+                <h4 class="head_h4 map-animal__header">Panda</h4>
+                <div class="paragraph region"><span class="paragraph__head">Region:</span> on an island near Los Angeles</div>
+                <div class="paragraph"><span class="paragraph__head">Population:</span> more than 270 pairs in 2013
+                </div>
               </div>
             </div>
           </div>
