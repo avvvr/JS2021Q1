@@ -181,6 +181,9 @@ input:checked+.switch__slider:before {
   height: 597px;
   width: 157px;
   margin: 60px 0 0 26px;
+
+  top: 154px;
+  bottom: 800px;
 }
 
 /* section */

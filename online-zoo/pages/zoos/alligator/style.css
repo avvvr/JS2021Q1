@@ -173,6 +173,8 @@ input:checked+.switch__slider:before {
 
 .sidebar {
   position: sticky;
+  top: 154px;
+  bottom: 800px;
 
   display: flex;
   justify-content: space-between;
@@ -218,7 +220,7 @@ input:checked+.switch__slider:before {
   width: 100%;
 }
 
-.iframe{
+.iframe {
   border-radius: 5px;
 }
 
