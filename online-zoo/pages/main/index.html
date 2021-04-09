@@ -10,21 +10,21 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="wrapper wrapper_l">
       <div class="header__content">
         <h1 class="header__h1_hidden">Online Zoo</h1>
         <figure>
-          <a href="#">
+          <a href="./index.html">
             <img src="../../assets/icons/logo.svg" alt="zoo-online">
           </a>
         </figure>
         <nav>
           <ul class="header__nav nav">
-            <li><a class="nav__item nav__item_active header__nav_item" href="#">About</a></li>
-            <li><a class="nav__item header__nav_item" href="">Zoos</a></li>
+            <li><a class="nav__item nav__item_active header__nav_item">About</a></li>
+            <li><a class="nav__item header__nav_item" href="../zoos/panda/panda.html">Zoos</a></li>
             <li><a class="nav__item header__nav_item" href="../../pages/map/map.html">Map</a></li>
-            <li><a class="nav__item header__nav_item" href="">Contact Us</a></li>
+            <li><a class="nav__item header__nav_item" href="#footer">Contact Us</a></li>
             <li><a class="nav__item header__nav_item"
                 href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a></li>
           </ul>
@@ -60,7 +60,7 @@
               <div class="slider__item_text">
                 <p>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
                 <div class="slider__btn-wrapper">
-                  <a class="slider__btn slider__watch-btn_green">
+                  <a class="slider__btn slider__watch-btn_green" href="../zoos/panda/panda.html">
                     <img class="slider__btn-icon" src="../../assets/icons/watch-online_green.svg" alt>
                     <p>watch online</p>
                   </a>
@@ -251,7 +251,7 @@
             <input class="range__input range__input_dark" type="range" min="1" max="8" value="1" id="myRange2">
           </div>
         </div>
-        <a class="button" href="">Choose your favorite</a>
+        <a class="button" href="../map/map.html">Choose your favorite</a>
       </div>
     </section>
     <section class="pay-and-feed">
@@ -277,7 +277,7 @@
             <h4 class="head_h4 infographic__head">Panda gets the bamboo</h4>
           </div>
         </div>
-        <a class="button" href="">Donate</a>
+        <a class="button">Donate</a>
       </div>
     </section>
     <section class="testimonials">
@@ -311,11 +311,11 @@
             </figure>
           </div>
           <div class="range">
-            <p class="range__text range__text_dark"><span class="range__span range__span_dark">02/</span>08</p>
-            <input class="range__input range__input_dark" type="range" min="1" max="8" value="2" id="myRange2">
+            <p class="range__text range__text_dark"><span class="range__span range__span_dark">01/</span>08</p>
+            <input class="range__input range__input_dark" type="range" min="1" max="8" value="1" id="myRange2">
           </div>
         </div>
-        <a class="button" href="">Leave feedback</a>
+        <a class="button">Leave feedback</a>
       </div>
     </section>
     <section class="map">
@@ -432,19 +432,19 @@
             </div>
           </div>
         </div>
-        <button class="watch-button">
+        <a class="watch-button" href="../zoos/panda/panda.html">
           <img src="../../assets/icons/watch-online.svg" alt>
           <div class="watch-button__text">watch online</div>
-        </button>
+        </a>
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="wrapper wrapper_l">
       <div class="footer__top">
         <div class="footer__left">
           <figure class="footer__logo">
-            <a href="#">
+            <a href="./index.html">
               <img src="../../assets/icons/logo_light.svg" alt="zoo-online">
             </a>
           </figure>
@@ -455,7 +455,7 @@
             <fieldset class="footer__fieldset">
               <legend class="fieldset__legend">Please enter your message</legend>
               <textarea class="fieldset__textarea" name="textarea" id="footer_textarea" cols="43" rows="6"
-                maxlength="280"></textarea>
+                maxlength="280" required></textarea>
             </fieldset>
             <div>
               <input class="footer__checkbox" type="checkbox" name="" id="input-checkbox" required>
@@ -472,8 +472,8 @@
         <div class="footer__middle">
           <nav>
             <ul class="nav footer__nav">
-              <li><a class="nav__item footer__nav-item" href="">About</a></li>
-              <li><a class="nav__item footer__nav-item" href="">Zoos</a></li>
+              <li><a class="nav__item footer__nav-item" href="./index.html">About</a></li>
+              <li><a class="nav__item footer__nav-item" href="../zoos/panda/panda.html">Zoos</a></li>
               <li><a class="nav__item footer__nav-item" href="../../pages/map/map.html">Map</a></li>
               <li><a class="nav__item footer__nav-item"
                   href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a></li>
@@ -520,7 +520,7 @@
           </div>
         </div>
         <div class="footer__right">
-          <a class="button footer__button" href="">Choose your favorite</a>
+          <a class="button footer__button">donate for volunteers</a>
         </div>
       </div>
       <div class="footer__bottom">

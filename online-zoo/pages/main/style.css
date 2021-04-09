@@ -211,8 +211,14 @@ button {
 
   background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
   border-radius: 3px;
+  text-decoration: none;
 
   transition: 0.2s;
+}
+
+.watch-button:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .watch-button__text {
@@ -316,6 +322,7 @@ button {
 
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .slider__watch-btn_green {
@@ -630,6 +637,7 @@ button {
 }
 
 .button:hover {
+  cursor: pointer;
   background: linear-gradient(106.89deg, rgb(66, 190, 159) -14.32%, #45c9d3 100.68%);
   transition: all 1.8s;
 }

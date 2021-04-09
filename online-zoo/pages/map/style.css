@@ -182,6 +182,11 @@ button {
   transition: 0.2s;
 }
 
+.watch-button:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .watch-button__text {
   margin-left: 5px;
   font-family: 'Roboto', sans-serif;
@@ -225,6 +230,7 @@ button {
 }
 
 .button:hover {
+  cursor: pointer;
   background: linear-gradient(106.89deg, rgb(66, 190, 159) -14.32%, #45c9d3 100.68%);
   transition: all 1.8s;
 }
