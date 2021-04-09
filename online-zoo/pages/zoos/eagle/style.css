@@ -243,8 +243,19 @@ input:checked+.switch__slider:before {
   display: flex;
 }
 
-.iframe {
+.iframe-wrapper {
   border-radius: 5px;
+  overflow: hidden;
+}
+
+.iframe-wrapper_l {
+  width: 790px;
+  height: 442px;
+}
+
+.iframe-wrapper_sm {
+  width: 246px;
+  height: 141px;
 }
 
 .broadcast-preiew {
