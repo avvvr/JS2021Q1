@@ -306,7 +306,7 @@ button {
   margin: 0 -25px;
 }
 
-.map__slider-elements:hover,
+.map__slider-element:hover,
 .slider__arrow:hover {
   cursor: pointer;
 }
