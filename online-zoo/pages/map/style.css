@@ -252,6 +252,17 @@ button {
   color: #333;
 }
 
+.head_h4 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+
+  color: #333;
+}
+
 .paragraph {
   width: 790px;
   margin-bottom: 54px;
