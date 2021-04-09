@@ -248,7 +248,7 @@ button {
 .map__wrapper {
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 .head_h3 {
@@ -300,6 +300,10 @@ button {
   align-items: center;
   justify-content: space-between;
   width: 1073px;
+}
+
+.animal_active{
+  margin: 0 -25px;
 }
 
 .map__slider-elements:hover,
@@ -435,10 +439,15 @@ button {
 
 .map-animal__location:hover .svg-location {
   cursor: pointer;
-  /*fill: #eb5757;*/
+  fill: rgba(235, 87, 87, 0.9);
 }
 
 .svg-location_active {
+  fill: #eb5757;
+}
+
+.map-animal__location:hover .svg-location_active {
+  cursor: pointer;
   fill: #eb5757;
 }
 
