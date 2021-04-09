@@ -166,31 +166,28 @@ input:checked+.switch__slider:before {
 .main {
   display: flex;
   justify-content: start;
+  background-color: #fbfbfb;
 }
 
 /* sidebar */
 
 .sidebar {
   position: sticky;
-  top: 154px;
-  bottom: 800px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  height: 550px;
-  width: 210px;
-  margin: 150px 0 80px 26px;
-
-  z-index: 1;
+  height: 597px;
+  width: 157px;
+  margin: 60px 0 0 26px;
 }
 
 /* section */
 
 .animal {
-  width: 100%;
   display: flex;
+  width: 100%;
 }
 
 .wrapper {
@@ -198,6 +195,7 @@ input:checked+.switch__slider:before {
 }
 
 .wrapper_m {
+  flex-direction: column;
   max-width: 1200px;
 }
 
@@ -212,7 +210,86 @@ input:checked+.switch__slider:before {
 
 .animal__head {
   width: 346px;
-  margin-bottom: 40px;
+  margin: 62px 0 40px 0;
+}
+
+.animal__content {
+  display: flex;
+  width: 100%;
+}
+
+.iframe{
+  border-radius: 5px;
+}
+
+.broadcast-preiew {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.broadcast-preiew__item::after {
+  width: 246px;
+  height: 141px;
+  content: '';
+  display: block;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+}
+
+.broadcast__buttons {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+[id^=button] {
+  display: none;
+}
+
+[id^=button]+label {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #c4c4c4;
+  cursor: pointer;
+  margin: 5px;
+}
+
+[id^=button]:checked+label {
+  width: 11px;
+  height: 11px;
+  background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+  ;
+}
+
+.animal__info {
+  margin-left: 30px;
+}
+
+.head_h4 {
+  margin-bottom: 6px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #333;
+}
+
+.paragraph {
+  width: 380px;
+  margin-bottom: 13px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #4f4f4f;
 }
 
 button {
@@ -255,8 +332,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 245px;
+  width: 194px;
   height: 55px;
+  margin-top: 29px;
 
   background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
   border-radius: 3px;
@@ -278,29 +356,6 @@ button {
 .button:hover {
   background: linear-gradient(106.89deg, rgb(66, 190, 159) -14.32%, #45c9d3 100.68%);
   transition: all 1.8s;
-}
-
-.head_h4 {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-
-  color: #333;
-}
-
-.paragraph {
-  width: 380px;
-  margin-bottom: 54px;
-
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-
-  color: #4f4f4f;
 }
 
 
