@@ -279,7 +279,7 @@ button {
   padding-bottom: 20px;
 }
 
-.map__slider{
+.map__slider {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -287,7 +287,7 @@ button {
   margin-bottom: 32px;
 }
 
-.map__slider-elements{
+.map__slider-elements {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -295,11 +295,11 @@ button {
 }
 
 .map__slider-elements:hover,
-.slider__arrow:hover{
+.slider__arrow:hover {
   cursor: pointer;
 }
 
-.slider__arrow:hover{
+.slider__arrow:hover {
   opacity: 0.8;
 }
 
@@ -430,7 +430,7 @@ button {
   /*fill: #eb5757;*/
 }
 
-.svg-location_active{
+.svg-location_active {
   fill: #eb5757;
 }
 
