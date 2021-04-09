@@ -185,6 +185,11 @@ input:checked+.switch__slider:before {
   margin: 60px 0 0 26px;
 }
 
+.aside-arrow:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 /* section */
 
 .animal {
