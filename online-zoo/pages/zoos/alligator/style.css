@@ -23,6 +23,7 @@ body {
 
 
 .header {
+  position: relative;
   box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
 }
 
@@ -310,6 +311,7 @@ button {
   justify-content: center;
   width: 245px;
   height: 55px;
+  text-decoration: none;
 
   background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
   border-radius: 3px;
