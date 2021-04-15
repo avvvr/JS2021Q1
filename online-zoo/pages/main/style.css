@@ -518,6 +518,15 @@ button {
   height: 114px;
 }
 
+.socials__img path{
+  transition: 0.3s;
+}
+
+.socials__img:hover path{
+  fill: #4BD8B5;
+  transition: 0.3s;
+}
+
 @media all and (max-width: 1200px) {
 
   .socials {
