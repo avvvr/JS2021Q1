@@ -56,7 +56,7 @@ body {
   }
 
   .wrapper_sm {
-    max-width: 594px;
+    max-width: 746px; /*594px;*/
   }
 
   /*возможно wrapper_m = wrapper_sm = 746px*/
@@ -564,6 +564,16 @@ button {
   line-height: 16px;
 
   color: #4f4f4f;
+}
+
+@media all and (max-width: 1200px) {
+  
+  .how-it-works__img{
+    width: 746px;
+    height: 323px;
+    overflow: hidden;
+  }
+
 }
 
 
