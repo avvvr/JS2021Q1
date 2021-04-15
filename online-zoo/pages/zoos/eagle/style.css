@@ -623,6 +623,15 @@ button {
   margin-top: 20px;
 }
 
+.socials__img path{
+  transition: 0.3s;
+}
+
+.socials__img:hover path{
+  fill: #4BD8B5;
+  transition: 0.3s;
+}
+
 .footer__button {
   width: 275px;
 }
