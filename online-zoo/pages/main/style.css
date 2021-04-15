@@ -58,7 +58,9 @@ body {
   .wrapper_sm {
     max-width: 594px;
   }
-  
+
+  /*возможно wrapper_m = wrapper_sm = 746px*/
+
 }
 
 
@@ -69,7 +71,6 @@ body {
   position: relative;
   box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
 }
-
 
 .header__content {
   height: 94px;
@@ -175,7 +176,6 @@ input:checked+.switch__slider:before {
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
 .switch__slider_round {
   border-radius: 34px;
 }
@@ -186,6 +186,7 @@ input:checked+.switch__slider:before {
 
 
 /*watch-online section*/
+
 
 .watch-online {
   width: 100%;
@@ -213,6 +214,23 @@ input:checked+.switch__slider:before {
   line-height: 104px;
 
   color: #FEFEFE;
+}
+
+@media all and (max-width: 1200px) {
+
+  .watch-online {
+    height: 926px;
+  }
+
+  .watch-online__wrapper {
+    max-width: 900px;
+    padding-top: 128px;
+  }
+
+  .watch-online__head {
+    margin-bottom: 36px;
+  }
+
 }
 
 button {
@@ -360,6 +378,29 @@ button {
   margin-right: 2px;
 }
 
+@media all and (max-width: 1200px) {
+
+  .watch-online__slider {
+    position: absolute;
+    bottom: 68px;
+    right: -500px;
+    width: 1085px;
+  }
+
+  .slider__item {
+    position: relative;
+    width: 140px;
+    height: 203px;
+  }
+
+  .slider__item_active {
+    /*position: relative;*/
+    width: 245px;
+    height: 352px;
+    margin-top: -1px;
+  }
+}
+
 .range {
   width: 245px;
 }
@@ -405,7 +446,7 @@ button {
   width: 245px;
   height: 5px;
   outline: none;
-  /*opacity: 0.6;*/
+  opacity: 0.6;
   -webkit-transition: .2s;
   transition: opacity .2s;
 }
@@ -420,6 +461,7 @@ button {
 
 .range__input:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .range__input::-webkit-slider-thumb {
@@ -474,6 +516,14 @@ button {
   flex-direction: column;
   justify-content: space-between;
   height: 114px;
+}
+
+@media all and (max-width: 1200px) {
+
+  .socials {
+    height: 427px;
+  }
+
 }
 
 
