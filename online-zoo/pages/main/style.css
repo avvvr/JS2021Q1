@@ -844,11 +844,6 @@ button {
     margin: 50px 0;
   }
 
-  /*.infographic__head {
-    width: 132px;
-    margin: 18px 0 54px 0;
-  }*/
-
   .infographic__arrow {
     display: none;
   }
@@ -930,6 +925,23 @@ button {
 
 .testimonials__slider-text {
   width: 440px;
+}
+
+@media all and (max-width: 1200px) {
+
+  .testimonials__slider {
+    width: 900px;
+  }
+
+  .testimonials__slider-item {
+    width: 440px;
+    padding-bottom: 89px;
+  }
+
+  .testimonials__slider-text {
+    width: 326px;
+  }
+
 }
 
 
