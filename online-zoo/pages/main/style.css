@@ -824,7 +824,39 @@ button {
 }
 
 .infographic__arrow {
+  src: url("../../assets/icons/Arrow.svg");
   width: 107px;
+}
+
+.infographic__arrow_sm {
+  display: none;
+  width: 48px;
+}
+
+@media all and (max-width: 1200px) {
+
+  .pay-and-feed {
+    height: 702px;
+  }
+
+  .infographic {
+    width: 899px;
+    margin: 50px 0;
+  }
+
+  /*.infographic__head {
+    width: 132px;
+    margin: 18px 0 54px 0;
+  }*/
+
+  .infographic__arrow {
+    display: none;
+  }
+
+  .infographic__arrow_sm {
+    display: block;
+  }
+
 }
 
 
