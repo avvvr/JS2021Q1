@@ -1054,6 +1054,42 @@ button {
 }
 
 
+@media all and (max-width: 1200px) {
+
+  .map {
+    height: 842px;
+  }
+
+  .map__content {
+    width: 900px;
+    height: 436px;
+
+    background: url("../../assets/images/map_1200.svg") no-repeat;
+  }
+
+  .map-animal__info_panda {
+    right: 320px;
+  }
+
+  .eagle {
+    margin: 54px 0 0 85px;
+  }
+
+  .alligator {
+    margin: 70px 0 0 21px;
+  }
+
+  .gorilla {
+    margin: 155px 0 0 180px;
+  }
+
+  .panda {
+    margin: 70px 0 0 180px;
+  }
+
+}
+
+
 /* footer */
 
 .footer {
