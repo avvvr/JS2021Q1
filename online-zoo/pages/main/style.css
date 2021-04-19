@@ -1246,6 +1246,10 @@ button {
   color: #FEFEFE;
 }
 
+.footer__middle-right-wrapper{
+  display: flex;
+}
+
 .footer__middle {
   width: 520px;
 }
@@ -1306,7 +1310,7 @@ button {
 }
 
 .footer__bottom {
-  height: 133px;
+  /*height: 133px;*/
   padding-top: 28px;
   border-top: 0.5px solid #FEFEFE;
 
@@ -1320,4 +1324,44 @@ button {
 
 .footer__bottom_first {
   margin-bottom: 5px;
+}
+
+@media all and (max-width: 1200px) {
+
+  .footer {
+  height: 737px;
+}
+
+.footer__top {
+  height: 620px;
+}
+
+.footer__left {
+  width: 460px;
+}
+
+.footer__logo {
+  margin-bottom: 57px;
+}
+
+.footer__middle-right-wrapper{
+ flex-direction: column;
+}
+
+.footer__middle {
+  width: 404px;
+}
+
+/*.footer__nav {
+  width: 380px; /*404
+}*/
+
+.footer__socials {
+  margin-bottom: 40px;
+}
+
+.footer__bottom {
+  padding-top: 31px;
+}
+
 }
