@@ -49,7 +49,7 @@ body {
   max-width: 790px;
 }
 
-.header__content {
+.header__content_desc {
   height: 94px;
   display: flex;
   justify-content: space-between;
