@@ -82,6 +82,22 @@ body {
 
 }
 
+@media all and (max-width: 320px) {
+
+  .wrapper_l {
+    max-width: 300px;
+  }
+
+  .wrapper_m {
+    max-width: 300px;
+  }
+
+  .wrapper_sm {
+    max-width: 300px;
+  }
+
+}
+
 
 /*header*/
 
@@ -228,6 +244,14 @@ input:checked+.switch__slider:before {
 
 }
 
+@media all and (max-width: 320px) {
+
+  .switch-wrapper {
+    width: 155px;
+  }
+
+}
+
 
 /*watch-online section*/
 
@@ -295,6 +319,28 @@ input:checked+.switch__slider:before {
 
     font-size: 64px;
     line-height: 75px;
+  }
+
+}
+
+@media all and (max-width: 320px) {
+
+  .watch-online {
+    height: 669px;
+  }
+
+  .watch-online__wrapper {
+    max-width: 300px;
+    padding-top: 92px;
+  }
+
+  .watch-online__head {
+    width: 300px;
+    height: 168px;
+    margin-bottom: 15px;
+
+    font-size: 48px;
+    line-height: 56px;
   }
 
 }
@@ -489,6 +535,59 @@ button {
   }
 }
 
+@media all and (max-width: 320px) {
+
+  .watch-online__slider {
+    position: absolute;
+    bottom: 50px;
+    right: -332px;
+    width: 628px;
+  }
+
+  .slider__item {
+    width: 113px;
+    height: 164px;
+  }
+
+  .slider__item_active {
+    width: 140px;
+    height: 202px;
+  }
+
+  .slider__item-img {
+    width: 113px;
+    height: 164px;
+  }
+
+  .slider__item-img_active {
+    width: 140px;
+    height: 202px;
+  }
+
+  .slider__item_text {
+    bottom: 11px;
+    width: 128px;
+    height: 116px;
+    margin-right: 4px;
+    margin-left: 9px;
+
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .slider__btn-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 54px;
+    margin-top: 6px;
+  }
+
+  .slider__btn {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
 .range {
   width: 245px;
 }
@@ -569,7 +668,7 @@ button {
 }
 
 .range__input_large::-webkit-slider-thumb {
-  width: 62px;
+  width: 80px;
 }
 
 .range__input::-moz-range-thumb {
@@ -631,6 +730,35 @@ button {
 
   .socials {
     height: 480px;
+  }
+
+}
+
+@media all and (max-width: 320px) {
+
+  .watch-online__range {
+    margin-top: 15px;
+    padding-left: 120px;
+  }
+
+  .watch-online__range-text {
+    width: 140px;
+  }
+
+  .watch-online__range-input {
+    width: 140px;
+  }
+
+  .watch-online__range-input::-webkit-slider-thumb {
+    width: 17px;
+  }
+
+  .watch-online__range-input::-moz-range-thumb {
+    width: 17px;
+  }
+
+  .socials {
+    display: none;
   }
 
 }
@@ -699,6 +827,29 @@ button {
 
 }
 
+@media all and (max-width: 320px) {
+
+  .how-it-works {
+    padding-top: 50px;
+  }
+
+  .how-it-works__wrapper {
+    height: 783px;
+  }
+
+  .head_h3 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .how-it-works__img {
+    width: 300px;
+    height: 323px;
+    overflow: hidden;
+  }
+
+}
+
 
 /*our-inspiration section*/
 
@@ -754,6 +905,19 @@ button {
     flex-direction: column;
     align-items: center;
     height: 675px;
+  }
+
+}
+
+@media all and (max-width: 640px) {
+
+  .our-inspiration {
+    height: 719px;
+    padding-top: 50px;
+  }
+
+  .our-inspiration__wrapper {
+    height: 619px;
   }
 
 }
@@ -927,7 +1091,31 @@ button {
     display: none;
   }
 
-  .range {
+  .pets-in-zoo__range {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+}
+
+@media all and (max-width: 320px) {
+
+  .pets-in-zoo {
+    height: 683px;
+  }
+
+  .pets-in-zoo__wrapper {
+    height: 533px;
+  }
+
+  .pets-in-zoo__content {
+    width: 300px;
+    height: 301px;
+  }
+
+  .pets-in-zoo__range {
     display: flex;
     flex-direction: column;
     align-items: center;
