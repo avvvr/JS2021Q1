@@ -10,7 +10,6 @@
 </head>
 
 <body>
-  <h1>Уважаемые проверяющие, отложите проверку до завтрашнего дня, пожалуйста. Буду очень благодарна!</h1>
   <header class="header" id="header">
     <div class="wrapper wrapper_l">
       <div class="header__content_desc">
@@ -301,7 +300,8 @@
     <section class="pay-and-feed">
       <div class="wrapper wrapper_m pay-and-feed__wrapper">
         <h3 class="head_h3 pay-and-feed__head">Pay and feed</h3>
-        <div class="paragraph pay-and-feed__paragraph">The opportunity to easily and naturally (but as often as possible) donate to the needs of
+        <div class="paragraph pay-and-feed__paragraph">The opportunity to easily and naturally (but as often as
+          possible) donate to the needs of
           animals that you
           like.</div>
         <div class="infographic">
@@ -311,6 +311,7 @@
           </div>
           <img class="infographic__arrow" src="../../assets/icons/Arrow.svg" alt>
           <img class="infographic__arrow_sm" src="../../assets/icons/Arrow_sm.svg" alt>
+          <img class="infographic__arrow_sm-down" src="../../assets/icons/Arrow_sm_down.svg" alt>
           <div class="infographic__item">
             <img class="infographic__icon" src="../../assets/icons/zoo.svg" alt>
             <h4 class="head_h4 infographic__head">Payment goes
@@ -318,6 +319,7 @@
           </div>
           <img class="infographic__arrow" src="../../assets/icons/Arrow.svg" alt>
           <img class="infographic__arrow_sm" src="../../assets/icons/Arrow_sm.svg" alt>
+          <img class="infographic__arrow_sm-down" src="../../assets/icons/Arrow_sm_down.svg" alt>
           <div class="infographic__item">
             <img class="infographic__icon" src="../../assets/icons/panda.svg" alt>
             <h4 class="head_h4 infographic__head">Panda gets the bamboo</h4>
@@ -361,7 +363,7 @@
             <input class="range__input range__input_dark" type="range" min="1" max="8" value="1" id="myRange2">
           </div>
         </div>
-        <a class="button">Leave feedback</a>
+        <a class="button testimonials__button">Leave feedback</a>
       </div>
     </section>
     <section class="map">
@@ -439,7 +441,7 @@
                 </defs>
               </svg>
             </div>
-            <div class="map-animal__info">
+            <div class="map-animal__info map-animal__info_gorilla">
               <img class="map-animal__info-img" src="../../assets/images/elipse_gorilla.png" alt="gorilla">
               <div>
                 <h4 class="head_h4 map-animal__header">Gorilla</h4>
@@ -489,11 +491,25 @@
     <div class="wrapper wrapper_l">
       <div class="footer__top">
         <div class="footer__left">
-          <figure class="footer__logo">
-            <a href="./index.html">
-              <img src="../../assets/icons/logo_light.svg" alt="zoo-online">
-            </a>
-          </figure>
+          <div class="footer__logo-wrapper">
+            <figure class="footer__logo">
+              <a href="./index.html">
+                <img src="../../assets/icons/logo_light.svg" alt="zoo-online">
+              </a>
+            </figure>
+            <div class="footer__right_mob">
+              <a class="button footer__button">donate for volunteers</a>
+            </div>
+          </div>
+          <nav>
+            <ul class="nav footer__nav footer__nav_mob">
+              <li><a class="nav__item footer__nav-item" href="./index.html">About</a></li>
+              <li><a class="nav__item footer__nav-item" href="../zoos/panda/panda.html">Zoos</a></li>
+              <li><a class="nav__item footer__nav-item" href="../../pages/map/map.html">Map</a></li>
+              <li><a class="nav__item footer__nav-item"
+                  href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a></li>
+            </ul>
+          </nav>
           <form class="form" action="">
             <h5 class="head_h5">Contact us</h5>
             <input class="form__input" type="text" placeholder="Name" name="name" id="input-name" required><br>
@@ -518,7 +534,7 @@
         <div class="footer__middle-right-wrapper">
           <div class="footer__middle">
             <nav>
-              <ul class="nav footer__nav">
+              <ul class="nav footer__nav footer__nav_desc">
                 <li><a class="nav__item footer__nav-item" href="./index.html">About</a></li>
                 <li><a class="nav__item footer__nav-item" href="../zoos/panda/panda.html">Zoos</a></li>
                 <li><a class="nav__item footer__nav-item" href="../../pages/map/map.html">Map</a></li>
@@ -592,10 +608,11 @@
               </div>
             </div>
           </div>
-          <div class="footer__right">
+          <div class="footer__right footer__right_desc">
             <a class="button footer__button">donate for volunteers</a>
           </div>
         </div>
+
       </div>
       <div class="footer__bottom">
         <div class="footer__bottom_first">©Noora Sagnayeva</div>
