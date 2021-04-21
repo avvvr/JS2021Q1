@@ -13,6 +13,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 .test1 {
@@ -2075,17 +2076,6 @@ button {
     height: 146px;
 
     background: url("../../assets/images/map_320.svg") no-repeat;
-  }
-
-  /*.map-animal__location {
-    position: relative;
-  }*/
-
-  .map-animal__img {
-    top: 6px;
-    left: 6px;
-    width: 22px;
-    height: 22px;
   }
 
   .location_sm {
