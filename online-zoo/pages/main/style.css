@@ -504,7 +504,7 @@ button {
   position: absolute;
   right: 0;
   left: -135px;
-  top: 156px;
+  top: 170px;
   z-index: 0;
 }
 
@@ -892,6 +892,7 @@ button {
   .how-it-works__img {
     /*width: 746px;*/
     height: 323px;
+    margin-top: -15px;
     overflow: hidden;
   }
 
@@ -1044,12 +1045,14 @@ button {
 
 .left-arrow {
   position: relative;
-  padding-right: 20px;
+  padding-right: 25px;
+  margin-top: 8px;
 }
 
 .right-arrow {
   position: relative;
-  margin-left: 20px;
+  margin-left: 25px;
+  margin-top: 5px;
 }
 
 .left-arrow:hover,
@@ -1564,6 +1567,7 @@ button {
 
   .testimonials__slider-item {
     width: 440px;
+    padding-top: 48px;
     padding-bottom: 89px;
   }
 
@@ -2395,7 +2399,7 @@ button {
   }
 
   .footer__logo {
-    margin-bottom: 57px;
+    margin-bottom: 67px;
   }
 
   .footer__middle-right-wrapper {
@@ -2404,6 +2408,10 @@ button {
 
   .footer__middle {
     width: 404px;
+  }
+
+  .footer__nav {
+    margin: 17px 0 60px 0;
   }
 
   .footer__socials {
