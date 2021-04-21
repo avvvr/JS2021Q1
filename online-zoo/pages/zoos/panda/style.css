@@ -698,7 +698,7 @@ button {
   transition: all 1.8s;
 }
 
-@media all and (max-width: 1570px) {
+@media all and (max-width: 1600px) {
 
   .animal__wrapper {
     margin-left: 49px;
@@ -718,12 +718,18 @@ button {
     height: 91px;
   }
 
+  .broadcast-preiew__item::after {
+    width: 164px;
+    height: 91px;
+  }
+
 }
 
 @media all and (max-width: 1200px) {
 
   .animal__wrapper {
     margin-left: 49px;
+    max-width: 527px;
   }
 
   .wrapper_m {
@@ -764,10 +770,11 @@ button {
 
 }
 
-@media all and (max-width: 1075px) {
+@media all and (max-width: 1090px) {
 
   .animal__wrapper {
     margin-left: 20px;
+    max-width: 497px;
   }
 
   .animal__head {
@@ -781,6 +788,11 @@ button {
   }
 
   .iframe-wrapper_sm {
+    width: 155px;
+    height: 89px;
+  }
+
+  .broadcast-preiew__item::after {
     width: 155px;
     height: 89px;
   }
@@ -858,10 +870,10 @@ button {
 
 }
 
-@media all and (max-width: 615px) {
+@media all and (max-width: 620px) {
 
   .animal__wrapper {
-    max-width: 350px;
+    max-width: 350px;/*390px;*/
     margin-left: 20px;
   }
 
@@ -871,6 +883,11 @@ button {
   }
 
   .iframe-wrapper_sm {
+    width: 98px;
+    height: 56px;
+  }
+
+  .broadcast-preiew__item::after {
     width: 98px;
     height: 56px;
   }
@@ -905,6 +922,11 @@ button {
     height: 80px;
   }
 
+  .broadcast-preiew__item::after {
+    width: 140px;
+    height: 80px;
+  }
+
   .iframe-wrapper_hidden {
     display: none;
   }
@@ -927,6 +949,11 @@ button {
     height: 66px;
   }
 
+  .broadcast-preiew__item::after {
+    width: 120px;
+    height: 66px;
+  }
+
   .paragraph {
     width: 250px;
     margin-bottom: 15px;
@@ -934,13 +961,21 @@ button {
     font-size: 12px;
     line-height: 14px;
   }
-  
+
 
 }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 390px) {
+  .animal__wrapper {
+    max-width: 205px;
+  }
+
+  .wrapper_m {
+    max-width: 205px;
+  }
 
   .animal__head {
+    width: 160px;
     font-size: 20px;
     line-height: 28px;
   }
@@ -951,6 +986,11 @@ button {
   }
 
   .iframe-wrapper_sm {
+    width: 98px;
+    height: 56px;
+  }
+
+  .broadcast-preiew__item::after {
     width: 98px;
     height: 56px;
   }
