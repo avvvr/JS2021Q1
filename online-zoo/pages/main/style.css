@@ -802,11 +802,21 @@ button {
 @media all and (max-width: 1200px) {
 
   .watch-online__range {
+    height: 49px;
     padding-left: 215px;
+    margin-top: 25px;
+  }
+
+  .slider__line-img {
+    top: 180px;
   }
 
   .socials {
     height: 427px;
+  }
+
+  .socials__wrapper {
+    height: 107px;
   }
 
 }
@@ -1016,6 +1026,15 @@ button {
 
   .our-inspiration__wrapper {
     height: 619px;
+  }
+
+  .our-inspiration__paragraph {
+    width: 299px;
+  }
+
+  .head_h4 {
+    font-size: 16px;
+    line-height: 19px;
   }
 
 }
@@ -1587,7 +1606,8 @@ button {
 
   .testimonials__slider-item {
     width: 440px;
-    padding-top: 48px;
+    padding-top: 60px;
+    /*48px;*/
     padding-bottom: 89px;
   }
 
@@ -1736,7 +1756,7 @@ button {
     padding-top: 50px;
   }
 
-  .testimonials__head{
+  .testimonials__head {
     margin-bottom: 25px;
   }
 
@@ -2435,6 +2455,18 @@ button {
 
   .footer__logo {
     margin-bottom: 67px;
+  }
+
+  .form__head {
+    margin-bottom: 35px;
+  }
+
+  .footer__fieldset {
+    margin: 5px 0 20px 0;
+  }
+
+  .submit-btn {
+    margin: 5px 0 0 249px;
   }
 
   .footer__middle-right-wrapper {

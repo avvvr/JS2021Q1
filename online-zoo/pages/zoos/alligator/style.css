@@ -1349,6 +1349,18 @@ button {
     margin-bottom: 67px;
   }
 
+  .form__head {
+    margin-bottom: 35px;
+  }
+
+  .footer__fieldset {
+    margin: 5px 0 20px 0;
+  }
+
+  .submit-btn {
+    margin: 5px 0 0 249px;
+}
+
   .footer__middle-right-wrapper {
     flex-direction: column;
   }

@@ -772,11 +772,11 @@ button {
 
   .paragraph {
     width: 253px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   .animal__button {
-    margin-top: -5px;
+    margin-top: 5px;
   }
 
 }
@@ -862,7 +862,7 @@ button {
   }
 
   .broadcast__buttons {
-    margin-top: 30px;
+    margin: 30px 0 50px 0;
   }
 
   .animal__info {
@@ -875,7 +875,7 @@ button {
   }
 
   .animal__button {
-    margin-top: 17px;
+    margin-top: 30px;
     margin-bottom: 80px;
   }
 
@@ -1348,6 +1348,18 @@ button {
   .footer__logo {
     margin-bottom: 67px;
   }
+
+  .form__head {
+    margin-bottom: 35px;
+  }
+
+  .footer__fieldset {
+    margin: 5px 0 20px 0;
+  }
+
+  .submit-btn {
+    margin: 5px 0 0 249px;
+}
 
   .footer__middle-right-wrapper {
     flex-direction: column;
