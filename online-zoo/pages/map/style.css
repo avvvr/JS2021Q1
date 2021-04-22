@@ -667,7 +667,7 @@ button {
 @media all and (max-width: 1200px) {
 
   .map {
-    height: 1204px;
+    height: 1110px;
   }
 
   .paragraph {
@@ -685,14 +685,19 @@ button {
   }
 
   .map__slider-elements {
-    width: 1035px;
+    width: 1070px;
     /* magic number */
+  }
+
+  .range{
+    margin-bottom: 50px;
   }
 
 
   .map__content {
-    width: 900px;
-    height: 436px;
+    width: 800px;
+    height: 388px;
+    margin-bottom: 35px;
 
     background: url("../../assets/images/map_w_800.svg") no-repeat;
   }
@@ -794,8 +799,12 @@ button {
   }
 
   .map__slider-elements {
-    width: 989px;
+    width: 1058px;
     /* magic number */
+  }
+
+  .range{
+    margin-bottom: 35px;
   }
 
 
@@ -994,6 +1003,7 @@ button {
   .paragraph {
     width: 280px;
     height: 182px;
+    margin-bottom: 40px;
 
     font-size: 12px;
     line-height: 14px;
@@ -1001,6 +1011,7 @@ button {
 
   .map__slider {
     width: 280px;
+    margin-bottom: 20px;
   }
 
   .slider-elements__wrapper {
@@ -1030,7 +1041,7 @@ button {
     width: 280px;
     height: 146px;
 
-    background: url("../../assets/images/map_320.svg") no-repeat;
+    background: url("../../assets/images/map_w_280.svg") no-repeat;
   }
 
   .location_sm {
