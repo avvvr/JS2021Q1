@@ -363,12 +363,13 @@ input:checked+.switch__slider:before {
 @media all and (max-width: 640px) {
 
   .watch-online {
-    height: 939px;
+    height: 1028px;
+    /*939px*/
   }
 
   .watch-online__wrapper {
     max-width: 600px;
-    padding-top: 122px;
+    padding-top: 216px;
   }
 
   .watch-online__head {
@@ -602,7 +603,7 @@ button {
 
   .watch-online__slider {
     position: absolute;
-    bottom: 112px;
+    bottom: 100px;
     right: -570px;
     width: 1085px;
   }
@@ -808,6 +809,10 @@ button {
 
 @media all and (max-width: 640px) {
 
+  .watch-online__range {
+    margin-top: 30px;
+  }
+
   .socials {
     height: 480px;
   }
@@ -908,6 +913,7 @@ button {
     /*width: 600px;*/
     height: 323px;
     overflow: hidden;
+    margin-top: -5px;
   }
 
 }
@@ -1217,7 +1223,9 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
+    height: 49px;
   }
 
 }
@@ -1420,6 +1428,11 @@ button {
     margin: 48px 0;
   }
 
+  .infographic__item {
+    width: 245px;
+    height: 245px;
+  }
+
   .infographic__arrow {
     display: none;
   }
@@ -1616,9 +1629,9 @@ button {
     height: 695px;
   }
 
-  /*.testimonials__content {
-    width: 600px;
-  }*/
+  .testimonials__head {
+    margin-bottom: 46px;
+  }
 
   .testimonials__slider-wrapper {
     align-items: flex-end;
@@ -1630,15 +1643,22 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 640px;
-    width: 585px;
+    width: 605px;
+    /*585px;*/
+    height: 340px;
+    /*320px;*/
   }
 
   .testimonials__slider-item {
-    width: 585px;
-    height: 310px;
+    width: 615px; /*585px;*/
+    height: 340px; /*310px;*/
+    padding-top: 0;
     padding-bottom: 40px;
-    margin: 15px 0;
+    margin: 0;
+  }
+
+  .testimonials__slider-item_first {
+    display: none;
   }
 
   .testimonials__slider-text {
@@ -1646,7 +1666,7 @@ button {
   }
 
   .testimonials__button {
-    margin-top: 48px;
+    margin-top: 30px;
   }
 
 }
@@ -2582,6 +2602,10 @@ button {
   .footer__nav {
     width: 79px;
     margin: 35px 0 23px 0;
+  }
+
+  .form__head{
+    margin-bottom: 30000px;
   }
 
   .footer__middle {
