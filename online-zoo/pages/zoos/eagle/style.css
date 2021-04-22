@@ -311,7 +311,7 @@ input:checked+.switch__slider:before {
 @media all and (max-width: 1200px) {
 
   .main {
-    height: 809px;
+    height: 715px;
   }
 
 }
@@ -479,6 +479,8 @@ input:checked+.switch__slider:before {
     height: 261px;
     width: 68px;
     margin: 40px 0 0 5px;
+
+    top: 120px;
   }
 
   .aside-arrow_top {
@@ -733,7 +735,7 @@ button {
 @media all and (max-width: 1200px) {
 
   .animal__wrapper {
-    margin-left: 49px;
+    margin-left: 64px;
     max-width: 527px;
   }
 
@@ -741,9 +743,13 @@ button {
     max-width: 900px;
   }
 
+  .animal__head {
+    margin-top: 60px;
+  }
+
   .iframe-wrapper_l {
     width: 527px;
-    height: 287px;
+    height: 297px;
   }
 
   .iframe-wrapper_sm {
@@ -766,7 +772,7 @@ button {
 
   .paragraph {
     width: 253px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 
   .animal__button {
@@ -820,7 +826,7 @@ button {
 
   .animal__wrapper {
     max-width: 497px;
-    margin-left: 20px;
+    margin-left: 26px;
   }
 
   .wrapper_m {
@@ -829,7 +835,7 @@ button {
 
   .animal__head {
     width: 361px;
-    margin: 70px 0 40px 0;
+    margin: 154px 0 35px 0;
   }
 
   .animal__content {
@@ -878,7 +884,8 @@ button {
 @media all and (max-width: 620px) {
 
   .animal__wrapper {
-    max-width: 350px;/*390px;*/
+    max-width: 350px;
+    /*390px;*/
     margin-left: 20px;
   }
 
@@ -1025,6 +1032,7 @@ button {
     margin: 127px 0 20px 0;
 
     font-size: 24px;
+    text-align: center;
     line-height: 28px;
   }
 
@@ -1054,6 +1062,13 @@ button {
   .broadcast__buttons {
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+
+  .head_h4 {
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .paragraph {
@@ -1575,6 +1590,10 @@ button {
 
   .footer {
     height: 1100px;
+  }
+
+  .footer__button {
+    margin-top: 0;
   }
 
   .footer__button {
