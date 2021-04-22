@@ -293,6 +293,10 @@ input:checked+.switch__slider:before {
     width: 155px;
   }
 
+  .burger {
+    margin-left: 24px;
+  }
+
 }
 
 /* main */
@@ -874,7 +878,8 @@ button {
 @media all and (max-width: 620px) {
 
   .animal__wrapper {
-    max-width: 350px;/*390px;*/
+    max-width: 350px;
+    /*390px;*/
     margin-left: 20px;
   }
 
@@ -1338,6 +1343,10 @@ button {
     width: 404px;
   }
 
+  .footer__nav {
+    margin: 17px 0 60px 0;
+  }
+
   .footer__socials {
     margin-bottom: 40px;
   }
@@ -1439,6 +1448,10 @@ button {
     width: 404px;
   }
 
+  .form__head {
+    margin-bottom: 35px;
+  }
+
   .form__input {
     width: 383px;
   }
@@ -1446,8 +1459,7 @@ button {
   .footer__fieldset {
     width: 383px;
     height: 120px;
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 5px 0 20px 0;
     border-radius: 3px;
   }
 
@@ -1455,7 +1467,7 @@ button {
     width: 138px;
     height: 36px;
     padding: 10px;
-    margin: 10px 0 0 249px;
+    margin: 5px 0 0 249px;
     background-color: transparent;
   }
 
@@ -1465,7 +1477,10 @@ button {
 
   .footer__right_mob {
     display: block;
+  }
 
+  .footer__button {
+    margin-top: 10px;
   }
 
   .footer_middle-head {
@@ -1483,7 +1498,7 @@ button {
   }
 
   .footer__bottom {
-    padding-top: 20px;
+    padding-top: 25px;
   }
 
 }
@@ -1507,6 +1522,10 @@ button {
     width: 79px;
     margin: 35px 0 23px 0;
   }
+
+  /*.form__head{
+    margin-bottom: 30000px;
+  }*/
 
   .footer__middle {
     width: 299px;
@@ -1559,9 +1578,17 @@ button {
     height: 1100px;
   }
 
+  .footer__button {
+    margin-top: 0;
+  }
+
+  .footer__button {
+    margin-top: 0;
+  }
+
   .footer__top {
     height: 1012px;
-    padding-top: 42px;
+    padding-top: 44px;
   }
 
   .footer__logo-wrapper {
@@ -1584,6 +1611,7 @@ button {
   .footer__fieldset {
     width: 300px;
     height: 124px;
+    margin-bottom: 15px;
   }
 
   .fieldset__textarea {
@@ -1591,7 +1619,7 @@ button {
   }
 
   .submit-btn {
-    margin: 10px 0 0 171px;
+    margin: 5px 0 0 171px;
   }
 
   .footer__right_desc {
