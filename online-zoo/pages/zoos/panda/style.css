@@ -282,7 +282,7 @@ input:checked+.switch__slider:before {
   }
 
   .burger {
-    margin-left: 43px;
+    margin-left: 34px;
   }
 
 }
@@ -424,17 +424,17 @@ input:checked+.switch__slider:before {
 @media all and (max-width: 640px) {
 
   .sidebar {
-    height: 411px;
+    height: 419px;
     width: 90px;
     margin: 65px 0 0 7px;
   }
 
   .aside-arrow_top {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   .aside-arrow_buttom {
-    padding-top: 20px;
+    padding-top: 10px;
   }
 
   .sidebar__img {
@@ -476,19 +476,19 @@ input:checked+.switch__slider:before {
 @media all and (max-width: 320px) {
 
   .sidebar {
-    height: 261px;
+    height: 270px;
     width: 68px;
-    margin: 40px 0 0 5px;
+    margin: 55px 0 0 5px;
 
-    top: 120px;
+    top: 127px;
   }
 
   .aside-arrow_top {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
   }
 
   .aside-arrow_buttom {
-    padding-top: 15px;
+    padding-top: 5px;
   }
 
   .sidebar__img {
@@ -836,6 +836,7 @@ button {
   .animal__head {
     width: 361px;
     margin: 154px 0 35px 0;
+    text-align: center;
   }
 
   .animal__content {
