@@ -200,7 +200,7 @@ saveBtn.addEventListener("click", (event) => {
 
 
 let isFullscreen = false;
-const fullscreenBtn = document.querySelector('#fullscreen-btn');
+const fullscreenBtn = document.querySelector('.openfullscreen');
 fullscreenBtn.addEventListener('click', () => {
   const html = document.documentElement;
   if (isFullscreen) {
@@ -238,6 +238,6 @@ document.addEventListener('webkitfullscreenchange', (event) => {
   } else {
     isFullscreen = false;
   }
-  fullscreenBtn.classList.toggle('fullscreen-btn');
-  fullscreenBtn.classList.toggle('fullscreen-exit-btn');
+  fullscreenBtn.classList.toggle('openfullscreen');
+  fullscreenBtn.classList.toggle('exitfullscreen');
 });

@@ -225,14 +225,25 @@ img {
   background-size: contain;
   transition: 0.3s;
   cursor: pointer;
-  background-image: url('assets/svg/fullscreen-open.svg');
 }
 
 .fullscreen:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-:-webkit-full-screen .fullscreen {
+.openfullscreen {
+  background-image: url('assets/svg/fullscreen-open.svg');
+}
+
+.exitfullscreen {
+  background-image: url('assets/svg/fullscreen-exit.svg');
+}
+
+:-webkit-full-screen .openfullscreen {
+  background-image: url('assets/svg/fullscreen-open.svg');
+}
+
+:-webkit-full-screen .exitfullscreen {
   background-image: url('assets/svg/fullscreen-exit.svg');
 }
 
