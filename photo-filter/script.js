@@ -2,16 +2,28 @@ let canvas = document.querySelector("#canvas");
 let context = canvas.getContext("2d");
 let img = new Image();
 img.src = "assets/img/img.jpg";
+img.crossOrigin = "anonymous"
 
 img.onload = function () {
   canvas.width = img.width;
-  canvas.height = img.height;
-  /*canvas.width = 1200;
-  canvas.height = 750;*/
+  canvas.height = img.height
   context.drawImage(img, 0, 0);
 
-  console.log(`width:${canvas.width} height:${canvas.height}`);
 };
+let kBlur = 1;
+
+/**/
+function blurCalc() {
+  if (img.clientWidth == 0) {
+    return kBlur = Math.sqrt(img.naturalWidth ** 2 + img.naturalHeight ** 2) / Math.sqrt(canvas.clientWidth ** 2 + canvas.clientHeight ** 2);
+  } else {
+    if ((img.naturalHeight / img.naturalWidth) < (maxHeight / maxWidth)) {
+      return kBlur = Math.sqrt(img.naturalWidth ** 2 + img.naturalHeight ** 2) / Math.sqrt(img.clientWidth ** 2 + img.clientHeight ** 2);
+    } else {
+      return kBlur = Math.sqrt(img.naturalWidth ** 2 + img.naturalHeight ** 2) / Math.sqrt((img.naturalWidth * delta) ** 2 + img.clientHeight ** 2);
+    }
+  }
+}
 
 
 let inputsParent = document.querySelector(".filters");
@@ -51,15 +63,22 @@ inputsParent.addEventListener('input', (event) => {
   for (let filter of filters) {
     if (filter.name === filterName) filter.value = filterValue;
   }
+  blurCalc();
   for (let i = 0; i < filters.length; i++) {
-    filterStr += `${filters[i].name}(${filters[i].value}${filters[i].sizing})`;
+    if (filters[i].name === "blur") {
+      filterStr += `${filters[i].name}(${kBlur*filters[i].value}${filters[i].sizing})`;
+    } else {
+      filterStr += `${filters[i].name}(${filters[i].value}${filters[i].sizing})`;
+    }
     if (i < filters.length - 1) {
       filterStr += " ";
     }
   }
 
   event.target.nextElementSibling.value = filterValue;
-  canvas.style.filter = filterStr;
+
+  context.filter = filterStr;
+  context.drawImage(img, 0, 0);
 })
 
 
@@ -78,7 +97,8 @@ resetBtn.addEventListener("click", () => {
     }
   }
 
-  canvas.style.filter = "blur(0px) invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg)";
+  context.filter = "blur(0px) invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg)";
+  context.drawImage(img, 0, 0);
 })
 
 let nextBtn = document.querySelector(".btn-next");
@@ -106,12 +126,27 @@ nextBtn.addEventListener("click", () => {
     timesOfDay = "night "
   }
 
-  //img = new Image();
+  let filterStr = "";
+
+  blurCalc();
+  for (let i = 0; i < filters.length; i++) {
+    if (filters[i].name === "blur") {
+      filterStr += `${filters[i].name}(${kBlur*filters[i].value}${filters[i].sizing})`;
+    } else {
+      filterStr += `${filters[i].name}(${filters[i].value}${filters[i].sizing})`;
+    }
+    if (i < filters.length - 1) {
+      filterStr += " ";
+    }
+  }
+
+
   img.src = `https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${timesOfDay}/${imgNumberStr}.jpg`;
   img.onload = function () {
     canvas.width = img.width;
     canvas.height = img.height;
     context.clearRect(0, 0, canvas.width, canvas.height);
+    context.filter = filterStr;
     context.drawImage(img, 0, 0);
   };
 
@@ -125,15 +160,84 @@ loadImgBtn.onchange = (event) => {
   let file = loadImgBtn.files[0];
   let path = (window.URL || window.webkitURL).createObjectURL(file);
 
-  //img = new Image();
+  let filterStr = "";
+
+  blurCalc();
+  for (let i = 0; i < filters.length; i++) {
+    if (filters[i].name === "blur") {
+      filterStr += `${filters[i].name}(${kBlur*filters[i].value}${filters[i].sizing})`;
+    } else {
+      filterStr += `${filters[i].name}(${filters[i].value}${filters[i].sizing})`;
+    }
+    if (i < filters.length - 1) {
+      filterStr += " ";
+    }
+  }
+
+
   img.src = path;
   img.onload = function () {
     canvas.width = img.width;
     canvas.height = img.height;
     context.clearRect(0, 0, canvas.width, canvas.height);
+    context.filter = filterStr;
     context.drawImage(img, 0, 0);
   };
 
-  console.log(img.src);
   loadImgBtn.value = null;
 }
+
+
+let saveBtn = document.querySelector(".btn-save");
+saveBtn.addEventListener("click", (event) => {
+
+  var link = document.createElement('a');
+  link.download = 'download.png';
+  link.href = canvas.toDataURL();
+  link.click();
+  link.delete;
+})
+
+
+let isFullscreen = false;
+const fullscreenBtn = document.querySelector('#fullscreen-btn');
+fullscreenBtn.addEventListener('click', () => {
+  const html = document.documentElement;
+  if (isFullscreen) {
+    fullScreenCancel();
+  } else {
+    fullScreen(html);
+  }
+})
+
+function fullScreen(element) {
+  if (element.requestFullScreen) {
+    element.requestFullScreen();
+  } else if (element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen();
+  } else if (element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  }
+}
+
+function fullScreenCancel() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) {
+    /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) {
+    /* IE11 */
+    document.msExitFullscreen();
+  }
+}
+
+document.addEventListener('webkitfullscreenchange', (event) => {
+  if (document.fullscreenElement) {
+    isFullscreen = true;
+  } else {
+    isFullscreen = false;
+  }
+  fullscreenBtn.classList.toggle('fullscreen-btn');
+  fullscreenBtn.classList.toggle('fullscreen-exit-btn');
+});
