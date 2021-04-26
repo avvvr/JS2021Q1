@@ -117,13 +117,13 @@ nextBtn.addEventListener("click", () => {
   }
 
   if (hour >= 6 && hour <= 11) {
-    timesOfDay = "morning"
+    timesOfDay = "morning";
   } else if (hour >= 12 && hour <= 17) {
-    timesOfDay = "day"
+    timesOfDay = "day";
   } else if (hour >= 18 && hour <= 23) {
-    timesOfDay = "evening"
+    timesOfDay = "evening";
   } else if (hour >= 0 && hour <= 5) {
-    timesOfDay = "night "
+    timesOfDay = "night";
   }
 
   let filterStr = "";
