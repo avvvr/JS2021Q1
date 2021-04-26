@@ -12,7 +12,6 @@ img.onload = function () {
 
 let inputsParent = document.querySelector(".filters");
 let output = document.querySelectorAll("output");
-//let filterStr = ["blur(0px)", "invert(0%)", "sepia(0%)", "saturate(100%)", "hue-rotate(0deg)"];
 let filters = [{
     name: "blur",
     value: 0,
@@ -57,5 +56,23 @@ inputsParent.addEventListener('input', (event) => {
 
   event.target.nextElementSibling.value = filterValue;
   canvas.style.filter = filterStr;
+})
 
+
+let resetBtn = document.querySelector(".btn-reset");
+resetBtn.addEventListener("click", () => {
+  let filterInputs = document.getElementsByTagName("input");
+  for (let i = 0; i < filters.length; i++) {
+    if (filters[i].name === "saturate") {
+      filters[i].value = 100;
+      filterInputs[i].nextElementSibling.value = 100;
+      filterInputs[i].value = 100;
+    } else {
+      filters[i].value = 0;
+      filterInputs[i].nextElementSibling.value = 0;
+      filterInputs[i].value = 0;
+    }
+  }
+
+  canvas.style.filter="blur(0px) invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg)";
 })
