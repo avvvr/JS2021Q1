@@ -6,7 +6,11 @@ img.src = "assets/img/img.jpg";
 img.onload = function () {
   canvas.width = img.width;
   canvas.height = img.height;
+  /*canvas.width = 1200;
+  canvas.height = 750;*/
   context.drawImage(img, 0, 0);
+
+  console.log(`width:${canvas.width} height:${canvas.height}`);
 };
 
 
@@ -102,16 +106,34 @@ nextBtn.addEventListener("click", () => {
     timesOfDay = "night "
   }
 
+  //img = new Image();
   img.src = `https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${timesOfDay}/${imgNumberStr}.jpg`;
-  console.log(img.src);
-  console.log(`imgNumber: ${imgNumber}`);
-
   img.onload = function () {
     canvas.width = img.width;
     canvas.height = img.height;
+    context.clearRect(0, 0, canvas.width, canvas.height);
     context.drawImage(img, 0, 0);
   };
 
   if (imgNumber === 20) imgNumber = 1;
   else imgNumber++;
 })
+
+
+let loadImgBtn = document.querySelector("#btnInput");
+loadImgBtn.onchange = (event) => {
+  let file = loadImgBtn.files[0];
+  let path = (window.URL || window.webkitURL).createObjectURL(file);
+
+  //img = new Image();
+  img.src = path;
+  img.onload = function () {
+    canvas.width = img.width;
+    canvas.height = img.height;
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.drawImage(img, 0, 0);
+  };
+
+  console.log(img.src);
+  loadImgBtn.value = null;
+}

@@ -204,6 +204,15 @@ img {
   filter: blur(var(--blur, 0px)) invert(var(--invert, 0%)) sepia(var(--sepia, 0%)) saturate(var(--saturate, 100%)) hue-rotate(var(--hue, 0deg));
 }
 
+#canvas {
+  height: 100%;
+  width: 100%;
+  max-height: 520px;
+  max-width: 830px;
+  object-fit: contain;
+  filter: blur(var(--blur, 0px)) invert(var(--invert, 0%)) sepia(var(--sepia, 0%)) saturate(var(--saturate, 100%)) hue-rotate(var(--hue, 0deg));
+}
+
 .fullscreen {
   position: fixed;
   top: 120px;
@@ -293,6 +302,12 @@ img {
   right: -5px;
   letter-spacing: 0;
 }
+
+/*canvas {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}*/
 
 @media (max-width: 1024px) {
   .main {
