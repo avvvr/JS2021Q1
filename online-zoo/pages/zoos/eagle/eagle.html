@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eagle</title>
-  <link rel="stylesheet" href="style.css">
+  <link id="styles-link" rel="stylesheet" href="style-light.css">
+  <script src="./eagle.js" defer></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <h1 class="header__h1_hidden">Online Zoo</h1>
         <figure>
           <a href="../../../pages/main/index.html">
-            <img src="../../../assets/icons/logo.svg" alt="zoo-online">
+            <img id="header__logo_l" src="../../../assets/icons/logo.svg" alt="zoo-online">
           </a>
         </figure>
         <nav>
@@ -31,9 +32,27 @@
         </nav>
         <div>
           <label class="switch">
-            <input class="switch__input" type="checkbox">
+            <input class="switch__input" id="switch__input_l" type="checkbox">
             <span class="switch__slider switch__slider_round"></span>
           </label>
+        </div>
+      </div>
+      <div class="header__content_tablet">
+        <h1 class="header__h1_hidden">Online Zoo</h1>
+        <figure>
+          <a href="../../main/index.html">
+            <img id="header__logo_sm" src="../../../assets/icons/logo.svg" alt="zoo-online">
+          </a>
+        </figure>
+        <div class="switch-burger-wrapper">
+          <label class="switch">
+            <input class="switch__input" id="switch__input_sm" type="checkbox">
+            <span class="switch__slider switch__slider_round"></span>
+          </label>
+
+          <figure class="burger">
+            <img src="../../../assets/icons/menu.svg" alt="menu">
+          </figure>
         </div>
       </div>
     </div>

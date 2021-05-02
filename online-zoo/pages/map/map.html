@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Map</title>
-  <link rel="stylesheet" href="style.css">
+  <link id="styles-link" rel="stylesheet" href="style-light.css">
+  <script src="./map.js" defer></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <h1 class="header__h1_hidden">Online Zoo</h1>
         <figure>
           <a href="../../pages/main/index.html">
-            <img src="../../assets/icons/logo.svg" alt="zoo-online">
+            <img id="header__logo_l" src="../../assets/icons/logo.svg" alt="zoo-online">
           </a>
         </figure>
         <nav>
@@ -31,7 +32,7 @@
         </nav>
         <div>
           <label class="switch">
-            <input class="switch__input" type="checkbox">
+            <input class="switch__input" id="switch__input_l" type="checkbox">
             <span class="switch__slider switch__slider_round"></span>
           </label>
         </div>
@@ -40,12 +41,12 @@
         <h1 class="header__h1_hidden">Online Zoo</h1>
         <figure>
           <a href="../main/index.html">
-            <img src="../../assets/icons/logo.svg" alt="zoo-online">
+            <img id="header__logo_sm" src="../../assets/icons/logo.svg" alt="zoo-online">
           </a>
         </figure>
         <div class="switch-burger-wrapper">
           <label class="switch">
-            <input class="switch__input" type="checkbox">
+            <input class="switch__input" id="switch__input_sm" type="checkbox">
             <span class="switch__slider switch__slider_round"></span>
           </label>
 
@@ -69,7 +70,7 @@
           habitat.</div>
         <div class="map__slider">
           <figure class="slider__arrow">
-            <img src="../../assets/icons/left-arrow.svg" alt="left">
+            <img id="arrow-img_l" src="../../assets/icons/left-arrow.svg" alt="left">
           </figure>
           <div class="slider-elements__wrapper">
             <div class="map__slider-elements">
@@ -101,7 +102,7 @@
             </div>
           </div>
           <figure class="slider__arrow">
-            <img src="../../assets/icons/right-arrow.svg" alt="right">
+            <img id="arrow-img_r" src="../../assets/icons/right-arrow.svg" alt="right">
           </figure>
         </div>
         <div class="range">
@@ -154,7 +155,7 @@
             <div class="map-animal__location">
               <img class="map-animal__img" id="alligator-img" src="../../assets/images/elipse_alligator.png"
                 alt="alligator">
-                <svg class="location_sm" width="34" height="47" viewBox="0 0 34 47" fill="none"
+              <svg class="location_sm" width="34" height="47" viewBox="0 0 34 47" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path class="svg-location" id="eagle-svg-location"
                   d="M17.0387 0C7.98316 0 0.616211 7.36783 0.616211 16.4245C0.616211 25.1854 15.6302 45.1461 16.2698 45.9924C16.4495 46.234 16.7374 46.375 17.0388 46.375C17.3402 46.375 17.6281 46.234 17.8078 45.9924C18.4473 45.1461 33.4614 25.1855 33.4614 16.4245C33.4612 7.36783 26.0942 0 17.0387 0ZM17.0387 25.1198C12.2453 25.1198 8.34442 21.2185 8.34442 16.4245C8.34442 11.6304 12.2453 7.72914 17.0387 7.72914C21.8321 7.72914 25.733 11.6304 25.733 16.4245C25.733 21.2185 21.8321 25.1198 17.0387 25.1198Z"

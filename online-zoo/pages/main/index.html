@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>online zoo</title>
-  <link rel="stylesheet" href="style.css">
+  <link id="styles-link" rel="stylesheet" href="style-light.css">
+  <script src="./index.js" defer></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <h1 class="header__h1_hidden">Online Zoo</h1>
         <figure>
           <a href="./index.html">
-            <img src="../../assets/icons/logo.svg" alt="zoo-online">
+            <img id="header__logo_l" src="../../assets/icons/logo.svg" alt="zoo-online">
           </a>
         </figure>
         <nav>
@@ -31,7 +32,7 @@
         </nav>
         <div>
           <label class="switch">
-            <input class="switch__input" type="checkbox">
+            <input class="switch__input" id="switch__input_l" type="checkbox">
             <span class="switch__slider switch__slider_round"></span>
           </label>
         </div>
@@ -40,12 +41,12 @@
         <h1 class="header__h1_hidden">Online Zoo</h1>
         <figure>
           <a href="./index.html">
-            <img src="../../assets/icons/logo.svg" alt="zoo-online">
+            <img id="header__logo_sm" src="../../assets/icons/logo.svg" alt="zoo-online">
           </a>
         </figure>
         <div class="switch-burger-wrapper">
           <label class="switch">
-            <input class="switch__input" type="checkbox">
+            <input class="switch__input" id="switch__input_sm" type="checkbox">
             <span class="switch__slider switch__slider_round"></span>
           </label>
 
@@ -191,7 +192,8 @@
             <img src="../../assets/icons/what-inspires.svg" alt>
           </figure>
           <h4 class="head_h4 our-inspiration__head">What inspires us?</h4>
-          <div class="paragraph our-inspiration__paragraph">As a voice for wildlife, we are devastated by the impact of the 2020 Australian
+          <div class="paragraph our-inspiration__paragraph">As a voice for wildlife, we are devastated by the impact of
+            the 2020 Australian
             bushfires on precious
             species and their habitat, and we are determined to assist in all aspects.</div>
         </div>
@@ -200,7 +202,8 @@
             <img src="../../assets/icons/mission.svg" alt>
           </figure>
           <h4 class="head_h4 our-inspiration__head">Our mission</h4>
-          <div class="paragraph our-inspiration__paragraph">Zoo Online saves wildlife and inspires everyone to make conservation a priority in
+          <div class="paragraph our-inspiration__paragraph">Zoo Online saves wildlife and inspires everyone to make
+            conservation a priority in
             their lives. </div>
         </div>
         <div class="our-inspiration__item">
@@ -208,7 +211,8 @@
             <img src="../../assets/icons/we-believe-in.svg" alt>
           </figure>
           <h4 class="head_h4 our-inspiration__head">What we believe in?</h4>
-          <div class="paragraph our-inspiration__paragraph">Animals have the right to a pain-free and happy life. They have equal claim to the
+          <div class="paragraph our-inspiration__paragraph">Animals have the right to a pain-free and happy life. They
+            have equal claim to the
             resources of this
             planet, and deserve a life of dignity and compassion.</div>
         </div>
@@ -220,7 +224,7 @@
         <div class="pets-in-zoo__content">
           <div class="pets-in-zoo__slider">
             <figure class="left-arrow">
-              <img src="../../assets/icons/left-arrow.svg" alt="left-arrow">
+              <img id="pets-in-zoo__arrow-img_l" src="../../assets/icons/left-arrow.svg" alt="left-arrow">
             </figure>
             <div class="pets-in-zoo__slider-content">
               <div class="pets-in-zoo__slider-item">
@@ -289,7 +293,7 @@
               </div>
             </div>
             <figure class="right-arrow">
-              <img src="../../assets/icons/right-arrow.svg" alt="right-arrow">
+              <img id="pets-in-zoo__arrow-img_r" src="../../assets/icons/right-arrow.svg" alt="right-arrow">
             </figure>
           </div>
           <div class="range pets-in-zoo__range">
@@ -337,7 +341,7 @@
         <div class="testimonials__content">
           <div class="testimonials__slider-wrapper">
             <figure class="left-arrow">
-              <img src="../../assets/icons/left-arrow.svg" alt="left-arrow">
+              <img id="testimonials__arrow-img_l" src="../../assets/icons/left-arrow.svg" alt="left-arrow">
             </figure>
             <div class="testimonials__slider">
               <div class="testimonials__slider-item testimonials__slider-item_first">
@@ -358,7 +362,7 @@
               </div>
             </div>
             <figure class="right-arrow">
-              <img src="../../assets/icons/right-arrow.svg" alt="right-arrow">
+              <img id="testimonials__arrow-img_r" src="../../assets/icons/right-arrow.svg" alt="right-arrow">
             </figure>
           </div>
           <div class="range">
