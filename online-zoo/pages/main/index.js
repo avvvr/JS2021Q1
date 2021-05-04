@@ -1,3 +1,5 @@
+// CHANGING THEMES
+
 const switchInput_l = document.querySelector("#switch__input_l");
 const switchInput_sm = document.querySelector("#switch__input_sm");
 const stylesLink = document.querySelector("#styles-link");
@@ -59,3 +61,21 @@ function setTheme() {
 
   stylesLink.href = `style-${theme}.css`;
 }
+
+// SLIDER WATCH ONLINE SECTION
+
+let previousElIndex = 0;
+let activeElIndex = 1; // count from 0
+let nextElIndex = 2;
+
+const sliderItemsParent = document.querySelector(".slider__content");
+
+sliderItemsParent.addEventListener("click", (event) => {
+  if (event.target.classList.contains("slider__item")) {
+    console.log("slider item");
+  }
+})
+
+const currentSelector = selector => {
+  return document.querySelector(selector);
+};
