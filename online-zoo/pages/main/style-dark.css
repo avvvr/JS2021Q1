@@ -509,6 +509,10 @@ button {
   margin-top: -29px;
 }
 
+.slider__item-img{
+  pointer-events: none;
+}
+
 .slider__line-img {
   position: absolute;
   right: 0;
@@ -600,6 +604,7 @@ button {
   }
 
   .slider__item-img {
+    pointer-events: none;
     width: 180px;
     height: 261px;
   }

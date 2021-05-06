@@ -68,14 +68,17 @@ let previousElIndex = 0;
 let activeElIndex = 1; // count from 0
 let nextElIndex = 2;
 
-const sliderItemsParent = document.querySelector(".slider__content");
+let sliderItemsParent = document.querySelector(".slider__content");
 
-sliderItemsParent.addEventListener("click", (event) => {
-  if (event.target.classList.contains("slider__item")) {
-    console.log("slider item");
+sliderItemsParent.addEventListener('click', (event) => {
+  if (event.target.classList.contains('slider__item_preious')) {
+    console.log("preious");
   }
-})
+  if (event.target.classList.contains('slider__item_next')) {
+    console.log("next");
+  }
+});
 
-const currentSelector = selector => {
+/*const currentSelector = selector => {
   return document.querySelector(selector);
-};
+};*/
